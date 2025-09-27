@@ -1,4 +1,3 @@
-/*google font link */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -18,6 +17,7 @@
 @theme{
       --font-jost: "Jost", sans-serif;
        --font-bebas-pro: "Bebas Neue Pro", sans-serif;
+       --font-bebas: "Bebas Neue", sans-serif;
 }
 
 

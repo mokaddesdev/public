@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?> class="m-0 p-0 bg-[#FFFFFF]">
 
-<header class="w-[1440px] mx-auto px-[100px] flex items-center justify-between">
+<header class="w-[1440px] mx-auto <?php echo is_front_page() ? 'py-0' : 'py-1'; ?> px-[100px] flex items-center justify-between">
 
     <!-- logo -->
     <div class="logo">

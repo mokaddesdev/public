@@ -5,7 +5,7 @@ Template Name: Tailwind Breadcrumb Page
 get_header(); 
 ?>
 
-<section class="relative w-[1440px] h-[220px] flex items-center justify-center bg-[#591419] flex-shrink-0 overflow-hidden">
+<section class="relative w-[1440px] h-[220px] mt-3 flex items-center justify-center bg-[#591419] flex-shrink-0 overflow-hidden">
     
     <!-- SVG Background -->
     <svg class="absolute top-0 right-0 h-full z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322 220" fill="none">
@@ -13,10 +13,12 @@ get_header();
     </svg>
 
     <!-- Breadcrumb Content -->
-    <div class="relative z-10 text-center text-white">
-        <p class="font-bebas text-[24px] leading-[34px] mb-2">
-            <a href="<?php echo home_url(); ?>" class="text-white hover:underline">Home</a> / <?php the_title(); ?>
-        </p>
+    <div class="relative pt-6 z-10 text-center text-white flex flex-col items-center">
+        <div class="font-bebas text-[24px] flex items-center gap-3 leading-[34px] ">
+            <a href="<?php echo home_url(); ?>" class="text-white hover:underline">Home </a>
+            <div class="w-[1px] h-[17.076px] bg-white"></div> 
+            <?php the_title(); ?>
+        </div>
 
         <?php
         // Page-specific default descriptions
@@ -39,7 +41,7 @@ get_header();
         ?>
 
         <?php if( $desc ): ?>
-            <h2 class="mt-2 font-bebas text-[48px] uppercase tracking-[0.96px]"><?php echo esc_html($desc); ?></h2>
+            <h2 class="pt-2.5 -ml-1.5 font-bebas text-[48px] uppercase tracking-[0.96px]"><?php echo esc_html($desc); ?></h2>
         <?php endif; ?>
     </div>
 </section>
