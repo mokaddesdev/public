@@ -1,4 +1,4 @@
-<section class="w-[1440px] py-10 mx-auto pr-[124px]">
+<section class="w-[1440px] py-16 mx-auto pr-[125px]">
   <div class="flex justify-between items-center">
     
     <!-- left -->
@@ -8,11 +8,11 @@
       </svg>
 
       <!-- centered text over SVG -->
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-        <div class="flex gap-5 justify-center items-center">
-          
+      <div class="absolute right-[100px] top-8 flex flex-col">
+        <div class="flex gap-[70px]">
+        
           <!-- time -->
-          <div class="time flex flex-col items-center gap-3">
+          <div class="time flex flex-col mt-3 items-center gap-0.5">
             <h1 class="heading-text">When:</h1>
             <p class="text-[#FFE4D5] font-bebas-pro text-[26px] font-bold leading-normal tracking-[0.52px] uppercase">
               June 28-29, 2025
@@ -20,11 +20,12 @@
           </div>
 
           <!-- location -->
-          <div class="location flex flex-col items-center gap-3">
+          <div class="location flex flex-col ml-2 items-center gap-0.5">
             <h1 class="heading-text">Where:</h1>
-            <p class="text-[#FFE4D5] font-bebas-pro text-[26px] w-60 font-bold leading-normal tracking-[0.52px] uppercase">
-              Blackfoot, Idaho <br> <span class="text-[19px]">Blackfoot Airport (McCarly Field)</span>
+            <p class="text-[#FFE4D5] font-bebas-pro text-[26px] w-60 font-bold leading-normal tracking-[0.52px] uppercase text-center">
+              Blackfoot, Idaho 
             </p>
+            <h6 class="text-center text-[19px] text-[#FFE4D5] font-bebas-pro w-60 font-bold leading-normal tracking-[0.52px] uppercase -mt-2.5">Blackfoot Airport (McCarly Field)</h6>
           </div>
 
         </div>
@@ -32,7 +33,7 @@
     </div>
 
     <!-- right -->
-    <div class="right max-w-[534px]">
+    <div class="right max-w-[534px] pt-2.5">
       <p class="text-black text-right font-jost text-[19px] font-normal leading-normal tracking-[0.38px]">
         Lorem ipsum dolor sit amet consectetur. Pellentesque lectus pulvinar cras cursus parturient in. Vitae risus nisi scelerisque iaculis feugiat vel ornare nec. Hendrerit nullam eu nisl arcu. Phasellus a tincidunt diam interdum.
       </p>
