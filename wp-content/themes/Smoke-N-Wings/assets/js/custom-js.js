@@ -261,39 +261,33 @@ jQuery(document).ready(function($){
             { breakpoint: 1536, settings: { slidesToShow: 5 } }  
         ]
     });
-    });
 
 
-
-// GSap For Animation
-
-gsap.registerPlugin(ScrollTrigger);
+  $(".faq-btn").click(function(){
+    const content = $(this).next(".faq-content");
 
 
-document.querySelectorAll(".counter").forEach(counter => {
-  const endValue = +counter.getAttribute("data-count");
-  const suffix = counter.getAttribute("data-suffix") || "";
+    $(".faq-content").not(content).slideUp(300);
+    
+    $(".faq-btn .icon").not($(this).find(".icon")).html(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M5.03468 13V7.91143H0V5.01429H5.03468V0H7.96532V5.01429H13V7.91143H7.96532V13H5.03468Z" fill="#591419"/>
+      </svg>`);
 
-  gsap.fromTo(counter,
-    { innerText: 10 },
-    { 
-      innerText: endValue,
-      duration: 1,
-      ease: "power1.inOut",
-      snap: { innerText: 2 },
-      scrollTrigger: {
-        trigger: counter,
-        start: "top 80%",
-        toggleActions: "play none none none"
-      },
-      onUpdate: function() {
-        counter.innerText = Math.floor(counter.innerText) + suffix;
-      }
+    if(content.is(":visible")){
+      content.slideUp(300);
+      $(this).find(".icon").html(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+          <path d="M5.03468 13V7.91143H0V5.01429H5.03468V0H7.96532V5.01429H13V7.91143H7.96532V13H5.03468Z" fill="#591419"/>
+        </svg>`);
+    } else {
+      content.slideDown(300);
+      $(this).find(".icon").html(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3" fill="none">
+          <path d="M6 2.91155H5.03468H0V0.0144043H5.03468H5.5L7 0.014286L7.96532 0.0144043H13V2.91155H7.96532H7H6Z" fill="#591419"/>
+        </svg>`);
     }
-  );
+  });
 });
 
-
-
-  console.log("GSAP is working!");
 
