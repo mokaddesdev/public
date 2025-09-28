@@ -1,44 +1,33 @@
 <?php 
 /**
- * register gallery post
+ * Register Gallery Post Type
  */
 
 function smokeWings_gallery_cpt() {
     $labels = array(
-        'name' => 'Galleries',
-        'singular_name' => 'Gallery',
+        'name'                  => __('Galleries', 'smokeWings'),
+        'singular_name'         => __('Gallery', 'smokeWings'),
+        'add_new'               => __('Add New Gallery', 'smokeWings'),
+        'add_new_item'          => __('Add New Gallery', 'smokeWings'),
+        'edit_item'             => __('Edit Gallery', 'smokeWings'),
+        'new_item'              => __('New Gallery', 'smokeWings'),
+        'all_items'             => __('All Galleries', 'smokeWings'),
+        'view_item'             => __('View Gallery', 'smokeWings'),
+        'search_items'          => __('Search Galleries', 'smokeWings'),
+        'not_found'             => __('No Galleries found', 'smokeWings'),
+        'not_found_in_trash'    => __('No Galleries found in Trash', 'smokeWings'),
+        'menu_name'             => __('Galleries', 'smokeWings')
     );
+
     $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
-        'menu_icon' => 'dashicons-format-gallery',
+        'labels'        => $labels,
+        'public'        => true,
+        'show_in_rest'  => true,
+        'has_archive'   => false,
+        'menu_icon'     => 'dashicons-format-gallery',
+        'supports'      => array('title', 'editor'),
     );
-    register_post_type( 'blo_gallery', $args );
+
+    register_post_type('blog_gallery', $args);
 }
-add_action( 'init', 'smokeWings_gallery_cpt' );
-
-
-function smokeWings_hide_add_new_gallery() {
-    global $submenu, $post_type;
-
-    if ( 'blo_gallery' !== $post_type ) return;
-
-    $posts = get_posts(array(
-        'post_type' => 'blo_gallery',
-        'post_status' => 'any',
-        'posts_per_page' => 1,
-        'fields' => 'ids',
-    ));
-
-    if ( !empty($posts) && isset($submenu['edit.php?post_type=blo_gallery']) ) {
-        foreach ( $submenu['edit.php?post_type=blo_gallery'] as $key => $item ) {
-            if ( $item[0] == 'Add New' ) {
-                unset( $submenu['edit.php?post_type=blo_gallery'][$key] );
-            }
-        }
-    }
-}
-add_action( 'admin_menu', 'smokeWings_hide_add_new_gallery', 999 );
-
+add_action('init', 'smokeWings_gallery_cpt');

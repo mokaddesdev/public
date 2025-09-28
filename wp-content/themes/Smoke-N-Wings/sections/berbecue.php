@@ -34,16 +34,37 @@
         </div>
 
         <!-- image gallery-->
-        <div class="images relative flex justify-between items-center">
-           <?php for ($i = 1; $i <= 4; $i++): ?>
-            <div class="image w-[278px] h-[229px] ">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery1.png"
-                     alt="hero image"
-                     class="w-full h-full object-cover">
-            </div>
-            <?php endfor; ?>
+    <div class="images relative flex justify-between items-center">
+<?php
+$latest_gallery = new WP_Query([
+    'post_type'      => 'blog_gallery',
+    'posts_per_page' => 1,
+    'post_status'    => 'publish'
+]);
 
+if($latest_gallery->have_posts()):
+    $latest_gallery->the_post();
 
-        </div>
+    // get all galleries in this post
+    $galleries = get_post_galleries(get_the_ID(), false); // false = return image URLs
+    if(!empty($galleries)){
+        foreach($galleries as $gallery){
+            foreach($gallery['src'] as $img_url){
+                echo '<div class="image w-[278px] h-[229px]">';
+                echo '<img src="'.esc_url($img_url).'" alt="'.esc_attr(get_the_title()).'" class="w-full h-full object-cover">';
+                echo '</div>';
+            }
+        }
+    } else {
+        echo '<p>No images found in gallery.</p>';
+    }
+
+    wp_reset_postdata();
+else:
+    echo '<p>No Blog Gallery found.</p>';
+endif;
+?>
+</div>
+
     </div>
 </section>
