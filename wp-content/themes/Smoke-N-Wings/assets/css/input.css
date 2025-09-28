@@ -48,47 +48,30 @@ ul, li {
    @apply text-[48px] font-bebas-pro font-extrabold uppercase tracking-[0.96px] text-white leading-[1];
 }
 
-.laundry_header-menu > div > ul {
-    @apply flex items-center;
+
+
+.name-email{
+    @apply flex gap-8 -mt-4;
 }
 
-.laundry_header-menu > div > ul li a{
-    @apply text-gray-700 font-semibold text-base px-2 lg:px-4 py-2;
-}
-
-.laundry_header-menu > div > ul li a:hover {
-    @apply bg-blue-300 text-red-300;
-}
-
-.laundry_header-menu > div > ul li {
-    @apply relative;
-}
-
-.laundry_header-menu > div > ul li ul{
-    @apply absolute flex flex-col bg-black shadow-lg rounded-md h-auto min-w-48 w-auto max-w-80 px-2 py-3 opacity-0 invisible transition-all duration-300;
-}
-
-.laundry_header-menu > div > ul li ul a{
-    @apply text-white hover:bg-white hover:text-black font-semibold text-base px-4 py-2 block;
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.w-full.p-2.pr-5.border.border-gray-300.rounded.placeholder-gray-400{
+    @apply w-[240px] text-[#333] font-jost text-[16px] font-normal leading-[24px];
 
 }
 
-.laundry_header-menu > div > ul li ul ul{
-    @apply right-full xl:left-full top-0 bg-black shadow-lg rounded-md mt-2 xl:ml-3;
-}
-.laundry_header-menu > div > ul li:hover ul,
-.laundry_header-menu > div > ul li:hover ul li:hover ul{
-    @apply opacity-100 visible;
-
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.w-full.p-2.pr-5.border.border-gray-300.rounded{
+    @apply w-[240px] pt-2 pl-2 text-[#333] font-jost text-[16px] font-normal leading-[24px];
 }
 
-.laundry_header-menu > div > ul li:hover ul ul{
-    @apply opacity-0 invisible;
+input.wpcf7-form-control.wpcf7-submit.has-spinner{
+    @apply inline-block w-[512px] h-[48px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[24px] text-center;
 
 }
 
+label.subject-lebel.text-\[\#16396F\].font-bebas.text-\[18px\].font-normal.leading-\[20px\].mb-1.block{
+    @apply -mt-1.5;
+}
 
-.laundry_header-menu > div > ul li ul a:hover,
-.laundry_header-menu > div > ul li:hover > a{
-    @apply bg-white text-black font-semibold text-base px-4 py-2 block;
+textarea.wpcf7-form-control.wpcf7-textarea.p-2.w-full.pr-5.border.border-gray-300.rounded.placeholder-gray-400{
+    @apply h-[150px] mb-2;
 }
