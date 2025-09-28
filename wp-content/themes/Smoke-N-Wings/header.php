@@ -13,6 +13,7 @@
 
     <!-- logo -->
     <div class="logo">
+
         <a href="<?php echo home_url(); ?>" class="text-white hover:underline">
         <img src="<?php echo get_template_directory_uri()?>/assets/images/logo.png" alt="" class="">
         </a>
@@ -30,7 +31,8 @@
                 ?>
             </nav>
             <div class="button pr-3.5">
-                <a href="#" class="inline-block w-[196px] h-[45px] flex-shrink-0 bg-[#F65600] text-white 
+            
+                <a href="<?php echo get_permalink( get_page_by_path('enter') ); ?>" class="inline-block w-[196px] h-[45px] flex-shrink-0 bg-[#F65600] text-white 
     font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase 
     py-[13.99px] px-[24px] text-center">
     Enter Competition

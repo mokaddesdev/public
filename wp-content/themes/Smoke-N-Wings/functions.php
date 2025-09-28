@@ -17,7 +17,7 @@ include_once get_template_directory() . '/inc/customizer/about.php';
 
 // Include CPT
 include_once get_template_directory() . '/inc/CPT/faqs.php';
-include_once get_template_directory() . '/inc/CPT/gallery.php';
+include_once get_template_directory() . '/inc/CPT/bestbbq.php';
 include_once get_template_directory() . '/inc/CPT/kids.php';
 include_once get_template_directory() . '/inc/CPT/sponsors.php';
 

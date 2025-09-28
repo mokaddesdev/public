@@ -34,7 +34,7 @@ function smokeWings_faqs_register()
         'has_archive'           => false,
         'hierarchical'          => false,
         'menu_position'         => 8,
-        'menu_icon'             => 'dashicons-format-quote',
+        'menu_icon'             => 'dashicons-info',
          'show_in_rest'       => true,
         'supports' => array(
             'title',
