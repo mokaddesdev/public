@@ -8,7 +8,8 @@
     <!-- Foreground content layer -->
     <div class="relative z-20 pt-[100px] gap-[68px] w-full flex">
             <!-- left side text -->
-            <div class="relative -mt-2 w-[522px] flex flex-col gap-3">
+       <div class="w-[522px] flex-shrink-0">
+          <div class="relative sticky top-1 right-0 -mt-2 w-[522px] flex flex-col gap-3">
                 <h2 class="text-[#16396F] font-bebas text-[60px] font-normal leading-[81px] tracking-[1.2px] uppercase">
                     Enter Competition
                 </h2>
@@ -101,11 +102,11 @@
                 </div>
 
             </div>
+       </div>
 
             <!-- right side image with SVG overlay -->
                <!-- right -->
- <div class="w-[591px] h-[1397px] -ml-1 flex-shrink-0 bg-white pt-4 px-[39.5px] mx-auto"
-     style="box-shadow: -12px 49px 94px 0 rgba(85,89,90,0.05);">
+ <div class="w-[591px] h-[1397px] -ml-1 flex-shrink-0 bg-white pt-4 px-[39.5px] mx-auto" style="box-shadow: -12px 49px 94px 0 rgba(85,89,90,0.05);">
                 <h2 class="text-[#16396F] font-bebas text-[38px] font-normal leading-[81px] tracking-[0.76px] uppercase"> Complete the <span class="text-[#F65600]">Entry Form</span> Below</h2>
 
                  <?php echo do_shortcode('[contact-form-7 id="cb14ff8" title="Enter Competition"]'); ?>

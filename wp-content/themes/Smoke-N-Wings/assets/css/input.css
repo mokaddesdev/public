@@ -215,6 +215,31 @@ span.wpcf7-list-item-label{
 }
 
 
+/* slider css */
+
+.best-bbq-post-gallery {
+    display: flex;
+    gap: 1rem; /* Tailwind gap-4 */
+}
+
+.best-bbq-post-gallery .image {
+    flex-shrink: 0;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
 
 
 

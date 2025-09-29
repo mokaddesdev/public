@@ -48,8 +48,8 @@
       'post_type'      => 'faqs',
       'posts_per_page' => 4,
       'post_status'    => 'publish',
-      'orederby' => 'time',
-      'order' => 'DESC',
+       'orderby' => 'date',
+        'order' => 'DESC',
     ));
 
     if ($faqs->have_posts()):

@@ -19,6 +19,12 @@ include_once get_template_directory() . '/inc/customizer/competition_time_locati
 include_once get_template_directory() . '/inc/customizer/hero.php';
 include_once get_template_directory() . '/inc/customizer/faqs.php';
 include_once get_template_directory() . '/inc/customizer/competion_date_banner.php';
+include_once get_template_directory() . '/inc/customizer/sponsors.php';
+include_once get_template_directory() . '/inc/customizer/best_bbq_action.php';
+include_once get_template_directory() . '/inc/customizer/footer.php';
+
+
+
 
 
 

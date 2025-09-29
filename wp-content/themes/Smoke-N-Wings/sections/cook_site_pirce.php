@@ -9,8 +9,8 @@ $args = array(
     'post_type'      => 'cook_site',  
     'posts_per_page' => 3,   
     'status' => 'publish',        
-    'orderby'        => 'date',     
-    'order'          => 'DESC',     
+    'orderby' => 'date',
+    'order' => 'DESC',    
 );
 
 $hav_query = new WP_Query( $args );
