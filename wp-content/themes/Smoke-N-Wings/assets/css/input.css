@@ -70,6 +70,7 @@ textarea.wpcf7-form-control.wpcf7-textarea.p-2.w-full.pr-5.border.border-gray-30
 }
 
 
+
  /* label all */
 .team-name-label, .team-email-label, .head-cook-label, .address-name-label, .team-phone-label, .kcbs-member-label, .kcbs-phone-label{
     @apply text-[#16396F] font-bebas text-[18px] font-normal leading-[20px] not-italic;
@@ -80,15 +81,20 @@ textarea.wpcf7-form-control.wpcf7-textarea.p-2.w-full.pr-5.border.border-gray-30
     @apply flex gap-[30px] pt-3 justify-between;
 }
 
+.kcbs-member-phone-number{
+    @apply flex gap-[40px] pt-3;
+}
+
 
   /* input and icon */
-.team-name-input-icon, .team-email-input-icon, .head-input-cook-icon, .address-name-input-icon, .team-phone-input-icon{
+.team-name-input-icon, .team-email-input-icon, .head-input-cook-icon, .address-name-input-icon, .team-phone-input-icon, .kcbs-member-input-icon, .kcbs-phone-input-icon{
     @apply flex gap-2 p-3 mt-1 border border-gray-200 items-center justify-between;
 }
 
 .address-phone-number{
     @apply mt-2.5;
 }
+
 
 input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.team-name-input{
     @apply w-[186px] outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px];
@@ -108,7 +114,109 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.team-address-inp
 input.wpcf7-form-control.wpcf7-tel.wpcf7-validates-as-required.wpcf7-text.wpcf7-validates-as-tel.team-phone-input{
     @apply w-[186px] outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px];
 }
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.kcbs-member-input{
+    @apply w-[205px] appearance-none outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px] bg-white pl-2 pr-2;
+}
 
+input.wpcf7-form-control.wpcf7-text.kcbs-number-input{
+     @apply w-[205px] outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px];
+}
 .head-cook{
     @apply mt-4 w-full;
 }
+
+.kcbs-member-phone-number{
+    @apply mt-1;
+}
+
+.kcbs-member-input-icon{
+    @apply relative flex mt-1  border border-gray-200;
+}
+.select-drop-down-icon{
+    @apply pointer-events-none absolute right-0 top-1/2 -translate-y-1/2;
+}
+.kcbs-phone{
+    @apply ml-0;
+}
+
+/* <!-- Agreement & Extra options --> */
+.read-checkbox-rule-label{
+   @apply text-[#16396F] font-jost text-[16px] font-semibold leading-normal tracking-[0.32px] not-italic;
+}
+
+.read-checkbox-rule{
+   @apply flex flex-col mt-[83px] items-start gap-[15px] h-[125px] p-[22px_18px] w-full bg-[#FFF4EE];
+}
+
+span.wpcf7-list-item.first{
+         @apply flex bg-white items-center gap-[7px] w-[229.656px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
+}
+
+span.wpcf7-list-item.last{
+         @apply flex bg-white items-center gap-[7px] w-[229.656px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
+}
+
+span.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.read-rules{
+    @apply -ml-5 flex gap-2 items-center text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic;
+}
+
+.serve-food-help{
+    @apply mt-6 flex flex-col items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
+}
+.serve-food-help-label, .team-help-kid-prepare-label{
+   @apply text-[#16396F]  font-jost text-[16px] font-semibold leading-normal tracking-[0.32px] not-italic;
+}
+
+.serve-food-help-input{
+    @apply -ml-4 -mt-7 text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic;
+}
+.serve-food-help-input span.wpcf7-list-item.first{
+         @apply flex bg-white items-center gap-[7px] w-[463px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
+}
+
+.serve-food-help-input span.wpcf7-list-item.last{
+         @apply flex bg-white items-center gap-[7px] w-[463px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
+}
+
+
+.team-help-kid-prepare {
+  @apply mt-5 flex flex-col items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
+}
+
+.team-help-kid-prepare-input {
+  @apply -ml-5 -mt-7 text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic;
+}
+
+
+.team-help-kid-prepare-input .wpcf7-list {
+  @apply flex gap-[10px]; 
+}
+
+.team-help-kid-prepare-input span.wpcf7-list-item.first,
+.team-help-kid-prepare-input span.wpcf7-list-item.last {
+  @apply flex items-center gap-[7px] w-[462px] h-[40px] p-[6px_4px] flex-shrink-0 border border-[rgba(246,86,0,0.1)] bg-white;
+}
+
+
+span.wpcf7-list-item-label{
+    @apply ml-1;
+}
+
+span.wpcf7-list-item-label{
+      @apply text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic ;
+}
+.acceptance-rule-text{
+    @apply mt-8 -ml-4;
+   
+}
+
+.entry-form{
+    @apply mt-8;
+}
+
+
+
+
+
+
+
