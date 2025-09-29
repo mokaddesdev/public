@@ -26,9 +26,9 @@
 
     <!-- paragraph -->
     <p class="w-[570px] text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px]">
-      The competition will be held on the tarmac at the Blackfoot Municipal Airport (McCarley Field). During the competition the area will continue to be an active airport. No guns, fireworks and all fire/flame must be contained within the cooking apparatus. Pets MUST be on a leash or contained at the teams cook site. There is a dog park just outside the airport gate. Vehicles must follow established traffic flow through the airport property.
+     Fire lanes and emergency access shall be maintained at all times.Ashes and grease must be disposed of in provided containers located close to the cook sites. Team site will be left with no garbage, ashes, debris or liquid/grease spills. If site is not left in a Clean manner the city will clean the site and bill the team for the labor involved.
       <br><br>
-      Each team site must have a fire extinguisher and if a stick burner is used some sort of ground protection must be used under the fire box. This may include sheet metal or cement board for.
+     All teams equipment, vehicles, trailers, cookers, awnings etc. must stay within teams assigned cook area. A parking area will be available nearby for vehicles that don’t fit within cook site. Water will be available as well as gray water disposal area. Electricity will not be provided. Please plan accordingly Each cook site will have a brief health department inspection along with their meat inspection.
     </p>
 
   </div>

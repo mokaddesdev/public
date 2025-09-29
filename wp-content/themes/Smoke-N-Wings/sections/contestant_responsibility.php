@@ -10,7 +10,7 @@
 
     <!-- image -->
     <div class="relative -top-3.5 -left-1 z-20">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rule2.png"
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rule4.png"
            alt="<?php esc_attr(the_title()) ?>"
            class="w-[600.293px] h-[560.469px] object-cover z-20">
     </div>

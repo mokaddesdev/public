@@ -1,19 +1,34 @@
-<section class="relative w-[1440px] px-[125px] mx-auto pt-[35px] pb-10">
+<section class="relative w-[1440px] px-[125px] mx-auto pt-[38px] pb-10">
 
     <!-- Foreground content layer -->
-    <div class="relative z-20 flex gap-[110px] w-full">
+    <div class="relative z-20 flex gap-16 w-full">
             <!-- left side text -->
-            <div class="relative about-left py-14 w-[454px] flex flex-col gap-9">
-                <h2 class="text-[#16396F] font-bebas-pro text-[60px] font-bold leading-[81px] tracking-[1.56px] uppercase">
+            <div class="relative about-left py-16 w-[569px] flex flex-col gap-9">
+                <h2 class="text-[#16396F] font-bebas text-[60px] font-normal leading-[60px] tracking-[1.2px] uppercase">
                     <span class="text-[#F65600]">The items </span> they are looking for are
                 </h2>
+               <!-- item content  -->
+                <div class="conatainer flex flex-col gap-2">
+                    <ul class="">
+                        <li class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                <g clip-path="url(#clip0_2019_82)">
+                                    <circle cx="11" cy="11.1641" r="11" fill="#E9680C"/>
+                                    <path d="M5.44141 10.4799L9.37562 14.4141L16.5598 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2019_82">
+                                    <rect width="22" height="22" fill="white" transform="translate(0 0.164062)"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                                <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                                    Three separate bins or basins for dishwashing (wash, rinse and sterilise) They can be as simple as rubbermaid bins.
+                                </p>
+                        </li>
+                    </ul>
 
-                <p class="w-[570px] text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px]">
-                    The competition will be held on the tarmac at the Blackfoot Municipal Airport (McCarley Field).During the competition the area will continue to be an active airport.No guns, fireworks and all fire/flame must be contained within the cooking apparatus.Pets MUST be on a leash or contained at the teams cook site. There is a dog park just outside the airport gate.Vehicles must follow established traffic flow through the airport property.
-                    <br>
-                    <br>
-                    Each team site must have a fire extinguisher and if a stick burner is used some sort of ground protection must be used under the fire box. This may include sheet metal or cement board for.
-                </p>
+                </div>
             </div>
         <!-- right side image with SVG overlay -->
         <div class="relative  w-[593px]">
@@ -25,10 +40,10 @@
                 </svg> 
                 </div>
 
-                <div class="absolute -top-3 -left-9 -mr-3">
+                <div class="absolute -top-3 -left-9 -mr-4">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rule3.png"
                          alt="about image"
-                         class="w-[618px] h-[515px]">
+                         class="w-[623px] h-[517px]">
                 </div>
             </div>
         </div>
