@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 @font-face {
   font-family: "Bebas Neue Pro";
@@ -17,6 +19,7 @@
       --font-jost: "Jost", sans-serif;
        --font-bebas-pro: "Bebas Neue Pro", sans-serif;
        --font-bebas: "Bebas Neue", sans-serif;
+       --font-dm-sans: "DM Sans", sans-serif;
 }
 
 /* ============================================================== 
@@ -230,6 +233,84 @@ span.wpcf7-list-item-label{
     display: flex !important;
     justify-content: center;
     align-items: center;
+}
+
+.leading-trim {
+  leading-trim: both;
+  text-edge: cap;
+}
+
+
+
+/* child entry form design */
+.form-data{
+    @apply pt-4;
+}
+.child-name-email, .child-parent-number, .parent-name-division{
+     @apply flex gap-[30px] pt-3;
+}
+.child-parent-number{
+    @apply mt-2.5;
+}
+
+.parent-name-division{
+    @apply mt-2.5;
+}
+
+.child-name-label, .child-email-label, .child-number-label, .parent-number-label, .parent-name-label, .parent-select-label, .child-message-label, .enrty_date-label{
+    @apply text-black font-jost text-[16px] font-normal leading-[24px];
+}
+
+
+input#child-name, input#child-email, input#parent-name{
+   @apply text-[#7C7C7C] w-[240.60px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[11px] mt-0.5 outline-none border border-[#CCCCCC];
+}
+
+.parent-number-input, .child-number-input{
+    @apply flex gap-1 items-center px-3.5 py-[5px] border border-[#CCCCCC];
+}
+input#child-phone, input#parent-phone{
+    @apply text-[#7C7C7C] w-[160.60px] font-jost text-[16px] font-normal leading-[24px] mt-0.5 outline-none border-none;
+}
+
+select#division-select{
+    @apply text-[#7C7C7C] w-[240.60px] font-jost text-[16px] font-normal leading-[24px] appearance-auto px-3.5 py-[11px] mt-0.5 outline-none border border-[#CCCCCC];
+}
+
+input#enrty_date{
+     @apply text-[#7C7C7C] w-[510px] font-jost text-[16px] font-normal leading-[24px] appearance-none px-3.5 py-[11px] mt-0.5 outline-none border border-[#CCCCCC];
+}
+
+.enrty_date{
+    @apply mt-5;
+}
+
+.child-message{
+    @apply mt-5;
+}
+textarea#child-message{
+     @apply text-[#7C7C7C] w-[512px] h-[65.60px] font-jost text-[16px] font-normal leading-[24px] appearance-none px-3.5 py-[11px] mt-0.5 outline-none border border-[#CCCCCC];
+}
+
+.send_message_button{
+    @apply mt-5;
+}
+.send_message_button input#child-form{
+     @apply inline-block w-[512px] h-[48px] flex-shrink-0 bg-[#16396F] text-white text-center font-['Jost'] text-[16px] font-semibold leading-[24px] py-[13.99px] px-[24px] capitalize;
+
+}
+
+
+
+/* Success Message Style */
+.wpcf7 form.sent .wpcf7-response-output {
+  @apply text-white bg-[#16396F] border-0 text-center font-['Jost'] text-[16px] font-medium 
+         px-5 py-3 rounded-lg mt-5 relative;
+}
+
+/* Error Message Style */
+.wpcf7 form.invalid .wpcf7-response-output {
+  @apply text-white bg-[#F65600] border-0 text-center px-5 py-3 rounded-lg;
 }
 
 

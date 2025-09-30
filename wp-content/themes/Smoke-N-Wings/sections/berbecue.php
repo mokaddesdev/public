@@ -61,11 +61,9 @@
                 'order'=> 'DESC',
             ]);
 
-            if ($latest_gallery->have_posts()):
-                $latest_gallery->the_post();
-
-                // get all galleries in this post
-                $galleries = get_post_galleries(get_the_ID(), false); // false = return image URLs
+            if ($latest_gallery->have_posts()): while($latest_gallery->have_posts()): $latest_gallery->the_post();
+                // get all galleries 
+                $galleries = get_post_galleries(get_the_ID(), false);
                 if (!empty($galleries)) {
                     foreach ($galleries as $gallery) {
                         foreach ($gallery['src'] as $img_url):
@@ -74,19 +72,15 @@
                 <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" class="w-full h-full object-cover">
             </div>
             <?php
-                        endforeach;
+                  endforeach;
                     }
                 } else {
                     echo '<p>No images found in gallery.</p>';
                 }
-
+             endwhile;
                 wp_reset_postdata();
-            else:
-                echo '<p>No Blog Gallery found.</p>';
-            endif;
-            ?>
+             endif;
+             ?>
             </div>
-
-
     </div>
 </section>

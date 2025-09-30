@@ -41,7 +41,7 @@ get_header();
         ?>
 
         <?php if( $desc ): ?>
-            <h2 class="pt-2.5 -ml-1.5 font-bebas text-[48px] uppercase tracking-[0.96px]"><?php echo esc_html($desc); ?></h2>
+            <h2 class="pt-3 font-bebas text-[48px] uppercase tracking-[0.96px]"><?php echo esc_html($desc); ?></h2>
         <?php endif; ?>
     </div>
 </section>
