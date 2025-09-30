@@ -20,11 +20,11 @@
     </div>
 
     <!-- Foreground content layer -->
-    <div class="relative z-20 px-[125px] pt-[50px] w-full flex flex-col gap-6">
+    <div class="relative z-20 px-[120px] pt-[50px] w-full flex flex-col gap-6">
         <!-- side right side button text -->
         <div class="relative w-full flex justify-between">
             <!-- left -->
-            <div class="about-left w-[626px] flex flex-col pt-[22px] pl-1.5 items-start gap-5">
+            <div class="about-left w-[626px] flex flex-col pt-[22px] items-start gap-5">
                 <h2 class="text-[#16396F]  font-bebas-pro text-[78px] font-bold leading-[81px] tracking-[1.56px] uppercase">
                     <?php echo $first_three_string;?>
                     <span class="text-[#F65600]">

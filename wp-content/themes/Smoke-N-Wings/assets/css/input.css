@@ -195,7 +195,6 @@ span.wpcf7-list-item-label{
 
 .best-bbq-post-gallery {
     display: flex;
-    gap: 1rem;
 }
 
 .best-bbq-post-gallery .image {
@@ -204,8 +203,7 @@ span.wpcf7-list-item-label{
 
 .slick-slide {
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    gap: 35px !important;
 }
 
 .leading-trim {
@@ -293,7 +291,7 @@ textarea#contact-message{
 }
 
 input#contact-form{
-     @apply inline-block w-[512px] mt-8 h-[48px] flex-shrink-0 bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[6px];
+     @apply inline-block w-[512px] mt-8 h-[48px] pr-4 bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[6px];
 }
 
 /* Success Message Style */

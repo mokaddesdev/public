@@ -19,7 +19,6 @@ include_once get_template_directory() . '/inc/customizer/competition_time_locati
 include_once get_template_directory() . '/inc/customizer/hero.php';
 include_once get_template_directory() . '/inc/customizer/faqs.php';
 include_once get_template_directory() . '/inc/customizer/competion_date_banner.php';
-include_once get_template_directory() . '/inc/customizer/sponsors.php';
 include_once get_template_directory() . '/inc/customizer/best_bbq_action.php';
 include_once get_template_directory() . '/inc/customizer/footer.php';
 include_once get_template_directory() . '/inc/customizer/enter_competition.php';
@@ -32,6 +31,9 @@ include_once get_template_directory() . '/inc/customizer/kids_older_division.php
 include_once get_template_directory() . '/inc/customizer/kids_older_competition_monitoring.php';
 include_once get_template_directory() . '/inc/customizer/kids_type.php';
 include_once get_template_directory() . '/inc/customizer/child_entry_form.php';
+
+include_once get_template_directory() . '/inc/customizer/sponsor_page_heading.php';
+
 
 
 

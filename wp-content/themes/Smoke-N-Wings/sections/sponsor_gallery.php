@@ -2,19 +2,13 @@
     <!-- heading -->
     <div>
        <?php
-            $sponsor_title = get_theme_mod('sponsor_section_title', 'our featured sponsors are amazing');
-
-            $words = explode(' ', trim($sponsor_title));
-            $first_two = array_slice($words, 0, 2);
-            $first_two_string = implode(' ', $first_two);
-
-            $remaining = array_slice($words, 2);
-            $remaining_string = implode(' ', $remaining);
-         ?>
-
+        $sponsor_title = get_theme_mod('sponsor_page_heading_title', 'our featured <span class="text-[#F65600]"> sponsors </span>');
+        ?>
+         <?php if ($sponsor_title) : ?>
         <h3 class="text-[#16396F] text-center font-bebas text-[60px] font-normal leading-[81px] tracking-[1.2px] uppercase self-stretch">
-            <?php echo $first_two_string;?> <span class="text-[#F65600]"> <?php echo $remaining_string;?> </span>
+            <?php echo wp_kses_post($sponsor_title); ?>
         </h3>
+        <?php endif; ?>
     </div>
 
     <!-- images gallery -->

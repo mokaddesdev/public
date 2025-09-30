@@ -1,4 +1,4 @@
-<section class="relative w-[1440px] pl-[127px] pb-[25px] pr-[40px] mx-auto py-5">
+<section class="relative w-[1440px] pl-[127px] pb-[35px] pr-[40px] mx-auto py-5">
 
     <!-- Background huge text layer -->
     <div class="absolute top-6 right-0 z-10 opacity-100">
@@ -118,7 +118,7 @@
             </div>
 
             <!-- right side image with SVG overlay -->
-               <div class="-ml-12 pt-2 pl-[40px] w-[591px] h-[595px] flex-shrink-0 bg-white shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)]">
+               <div class="-ml-12 pt-2 pl-[40px] w-[591px] h-[585px] flex-shrink-0 bg-white shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)]">
                 <h2 class="text-[#16396F] font-bebas text-[38px] font-normal leading-[81px] tracking-[0.76px] uppercase">
                      <?php
                      $right_title = get_theme_mod('contact_form_right_title');
