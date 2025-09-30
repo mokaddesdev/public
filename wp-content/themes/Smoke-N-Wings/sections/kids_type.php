@@ -1,3 +1,10 @@
+    <?php 
+
+      $title   = get_theme_mod('kids_type_section_heading_title');
+      $desc    = get_theme_mod('kids_type_section_heading_description');
+
+    ?>
+
 <section class="relative w-[1440px] mx-auto px-[125px] pt-[102px] flex flex-col gap-[52.50px] items-center">
 
     <!-- Background huge text layer -->
@@ -8,10 +15,20 @@
     <!-- section heading -->
     <div class="heading flex justify-between flex-col items-center gap-4">
         <h2 class="text-[#16396F] text-center font-['Bebas_Neue'] text-[60px] font-normal leading-[81px] tracking-[1.2px] uppercase">
-            KIDS-<span class="text-[#F65600]">Q</span>
+             <?php
+                    echo ! empty($title)
+                        ? wp_kses_post($title)
+                        : 'KIDS-<span class="text-[#F65600]">Q</span>';
+                    ?>
+            
         </h2> 
         <p class="text-black text-center font-['Jost'] text-[18px] font-normal leading-normal tracking-[0.36px]">
-            The Kid’s Q will be divided into two divisions
+             <?php
+                    echo ! empty($desc)
+                        ? wp_kses_post($desc)
+                        : 'The Kid’s Q will be divided into two divisions';
+                    ?>
+            
         </p>
     </div>
 

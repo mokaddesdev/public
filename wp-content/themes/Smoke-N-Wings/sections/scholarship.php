@@ -35,7 +35,15 @@ $image   = get_theme_mod('featured_sponsor_image');
                 </p>
 
                 <div class="button pt-7">
-                    <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>"
+                    <a href="<?php
+                     $enter_page = get_page_by_path('enter');
+                        if ($enter_page) {
+                            $enter_link = get_permalink($enter_page);
+                        } else {
+                            $enter_link = '#';
+                        }
+                        echo $enter_link;
+                        ?>"
                        class="inline-block w-[273px] h-[60px] flex-shrink-0 bg-[#F65600]
                        text-white font-bebas text-[24px] font-normal leading-[30.233px] uppercase 
                        py-[15.25px] px-[30px] text-center">

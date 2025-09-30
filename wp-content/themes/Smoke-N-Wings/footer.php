@@ -29,7 +29,15 @@
         <div class="footer-right flex flex-col items-end w-5/12">
             <!-- footer button -->
             <div class="button">
-                <a href="#" class="inline-block w-[367px] h-[45px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[48px] text-center">
+                <a href="<?php
+                     $enter_page = get_page_by_path('enter');
+                        if ($enter_page) {
+                            $enter_link = get_permalink($enter_page);
+                        } else {
+                            $enter_link = '#';
+                        }
+                        echo $enter_link;
+                        ?>" class="inline-block w-[367px] h-[45px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[48px] text-center">
                     <?php echo $footer_button_text; ?>
                 </a>
 

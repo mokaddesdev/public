@@ -25,7 +25,15 @@ $hero_button_text_right = get_theme_mod('hero_button_text_right', 'Check Out The
     <!-- Foreground content layer -->
     <div class="relative z-20 flex">
         <!-- Left button -->
-        <a href="<?php echo get_permalink(get_page_by_path('enter')); ?>">
+          <a href="<?php
+            $enter_page = get_page_by_path('enter');
+                if ($enter_page) {
+                    $enter_link = get_permalink($enter_page);
+                } else {
+                    $enter_link = '#';
+                }
+                echo $enter_link;
+                ?>">
             <div class="absolute top-[337px] left-0 transform translate-x-0 text-center z-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="514" height="88" viewBox="0 0 514 88" fill="none" class="mx-auto">
                     <path d="M0 0H514L490.703 88H0V0Z" fill="#F65600"/>

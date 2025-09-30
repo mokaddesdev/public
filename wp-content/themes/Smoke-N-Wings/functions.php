@@ -27,6 +27,12 @@ include_once get_template_directory() . '/inc/customizer/contact_form.php';
 
 include_once get_template_directory() . '/inc/customizer/featured_sponsor_scholarship.php';
 
+include_once get_template_directory() . '/inc/customizer/kids_younger_division.php';
+include_once get_template_directory() . '/inc/customizer/kids_older_division.php';
+include_once get_template_directory() . '/inc/customizer/kids_older_competition_monitoring.php';
+include_once get_template_directory() . '/inc/customizer/kids_type.php';
+include_once get_template_directory() . '/inc/customizer/child_entry_form.php';
+
 
 
 

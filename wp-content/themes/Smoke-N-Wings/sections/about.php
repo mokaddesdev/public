@@ -58,7 +58,15 @@ $about_left_image = get_theme_mod('about_left_image', get_template_directory_uri
                 <?php endif; ?>
 
                 <!-- SVG shape and button text -->
-                <a href="<?php echo get_permalink(get_page_by_path('enter')); ?>">
+           <a href="<?php
+              $enter_page = get_page_by_path('enter');
+                if ($enter_page) {
+                    $enter_link = get_permalink($enter_page);
+                } else {
+                    $enter_link = '#';
+                }
+                echo $enter_link;
+                ?>">
                 <div class="absolute bottom-0 left-0 w-[594px] z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="594" height="89" viewBox="0 0 594 89" fill="none">
                         <path d="M593.5 89H0L17.6895 0H593.5V89Z" fill="#16396F"/>
