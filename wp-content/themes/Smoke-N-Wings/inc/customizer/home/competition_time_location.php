@@ -7,7 +7,7 @@ function smokeWings_set_time_location_customizer($customizer){
     // Section
     $customizer->add_section('set_time_location_section', array(
         'title' => __('Competition Time & Location', 'smokeWings'),
-        'priority' => 50,
+        'priority' => 126,
     ));
 
     // Time Title

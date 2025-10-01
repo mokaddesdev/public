@@ -9,7 +9,7 @@ function smokeWings_best_bbq_gallery_heading_customizer($wp_customize) {
 
     $wp_customize->add_section('best_bbq_gallery_heading', array(
         'title' => __('Best BBQ Gallery Settings', 'smokeWings'),
-        'priority' => 65,
+        'priority' => 127,
     ));
     //  Title
 

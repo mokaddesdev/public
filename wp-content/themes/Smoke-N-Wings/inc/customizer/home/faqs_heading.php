@@ -8,7 +8,7 @@ function smokeWings_faqs_heading_customizer($customizer){
     //Settings
     $customizer->add_section('faqs_heading', array(
         'title' => __('FAQs Settings', 'smokeWings'),
-        'priority' => 85,
+        'priority' => 129,
     ));
 
     $customizer->add_setting('faqs_heading_title', array(

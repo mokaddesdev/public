@@ -8,7 +8,7 @@ function smokeWings_footer_customize_register($wp_customize)
 
     $wp_customize->add_section('footer_section', array(
         'title' => __('Footer Settings', 'smokeWings'),
-        'priority' => 140,
+        'priority' => 130,
     ));
 
 

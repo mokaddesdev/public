@@ -8,7 +8,7 @@ function smokeWings_child_entry_form_customizer($customizer){
     //Settings
     $customizer->add_section('child_entry_form_section', array(
         'title' => __('Child Entry Form Settings', 'smokeWings'),
-        'priority' => 205,
+        'priority' => 190,
     ));
 
     $customizer->add_setting('child_entry_form_title', array(

@@ -8,7 +8,7 @@ function smokeWings_competion_date_banner_customizer($customizer){
     //Settings
     $customizer->add_section('competion_date_banner_section', array(
         'title' => __('Competion Banner Settings', 'smokeWings'),
-        'priority' => 60,
+        'priority' => 128,
     ));
 
     $customizer->add_setting('competition_type_title', array(

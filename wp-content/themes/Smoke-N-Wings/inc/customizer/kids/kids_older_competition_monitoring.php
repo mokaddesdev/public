@@ -9,7 +9,7 @@ function smokeWings_kids_older_competition_monitoring_customizer($wp_customize) 
 
     $wp_customize->add_section('kids_older_competition_monitoring_section', array(
         'title' => __('Kids Older Competition Monitoring Settings', 'smokeWings'),
-        'priority' => 200,
+        'priority' => 180,
     ));
 
 

@@ -7,7 +7,7 @@ $hero_button_text_right = get_theme_mod('hero_button_text_right', 'Check Out The
 
 <section class="relative w-[1440px] h-[601px] overflow-hidden">
     <!-- Background color layer -->
-    <div class="absolute inset-0 bg-[#F8B895] opacity-[0.65] z-0"></div>
+    <div class="absolute inset-0 bg-[#F8B895] opacity-[0.75] z-0"></div>
 
     <!-- Background huge text layer -->
     <div class="absolute inset-0 flex flex-col gap-0 justify-between items-center z-10 opacity-100">

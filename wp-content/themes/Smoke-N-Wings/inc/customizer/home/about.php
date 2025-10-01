@@ -8,7 +8,7 @@ function smokeWings_about_customizer($customizer){
     //Settings
     $customizer->add_section('_about_section', array(
         'title' => __('About Settings', 'smokeWings'),
-        'priority' => 50,
+        'priority' => 125,
     ));
 
     $customizer->add_setting('about_title', array(

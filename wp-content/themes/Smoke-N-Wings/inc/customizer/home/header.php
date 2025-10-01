@@ -7,7 +7,7 @@ function smokeWings_header_customizer($wp_customize) {
 
      $wp_customize->add_section('header_section', array(
         'title' => __('Header Settings', 'smokeWings'),
-        'priority' => 40,
+        'priority' => 123,
     ));
 
     // Header Logo

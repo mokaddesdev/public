@@ -10,7 +10,7 @@ function smokeWings_customize_header($wp_customize)
     // Company Information Settings
     $wp_customize->add_section('company_information', array(
         'title' => __('Company Information Settings', 'smokeWings'),
-        'priority' => 10,
+        'priority' => 122,
     ));
 
   

@@ -1,12 +1,12 @@
 <?php get_header();?>
 
 <?php get_template_part('sections/breadcrumb_page'); ?>
-<?php get_template_part("sections/competition_rules");?>
-<?php get_template_part("sections/competition_held_on");?>
-<?php get_template_part("sections/competition_awareness");?>
-<?php get_template_part("sections/competition_time_location_rules");?>
-<?php get_template_part("sections/competition_item");?>
-<?php get_template_part("sections/competion_date_banner_shap_div");?>
-<?php get_template_part("sections/contestant_responsibility");?>
+<?php get_template_part("sections/rules/competition_rules");?>
+<?php get_template_part("sections/rules/competition_held_on");?>
+<?php get_template_part("sections/rules/competition_awareness");?>
+<?php get_template_part("sections/rules/competition_time_location_rules");?>
+<?php get_template_part("sections/rules/competition_item");?>
+<?php get_template_part("sections/home/competion_date_banner_shap_div");?>
+<?php get_template_part("sections/rules/contestant_responsibility");?>
 
 <?php get_footer();?>

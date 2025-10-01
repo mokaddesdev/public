@@ -1876,6 +1876,9 @@
   .opacity-\[0\.65\] {
     opacity: 0.65;
   }
+  .opacity-\[0\.75\] {
+    opacity: 0.75;
+  }
   .shadow-\[-12px_49px_94px_0_rgba\(85\,89\,90\,0\.05\)\] {
     --tw-shadow: -12px 49px 94px 0 var(--tw-shadow-color, rgba(85,89,90,0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);

@@ -8,7 +8,7 @@ function smokeWings_hero_customizer($customizer){
     //Settings
     $customizer->add_section('hero_section', array(
         'title' => __('Hero Settings', 'smokeWings'),
-        'priority' => 40,
+        'priority' => 124,
     ));
 
     //button text left
