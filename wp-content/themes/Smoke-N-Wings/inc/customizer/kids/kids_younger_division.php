@@ -8,7 +8,7 @@ function smokeWings_kids_younger_division_customizer($wp_customize) {
 
     $wp_customize->add_section('kids_younger_division_section', array(
         'title' => __('Kids Younger Division Settings', 'smokeWings'),
-        'priority' => 170,
+        'priority' => 141,
     ));
 
 

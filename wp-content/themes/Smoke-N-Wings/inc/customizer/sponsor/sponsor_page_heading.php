@@ -8,7 +8,7 @@ function smokeWings_sponsor_page_heading_customizer($wp_customize) {
     // Section
     $wp_customize->add_section('sponsor_page_heading_section', array(
         'title'    => __('Sponsor Page Heading Settings', 'smokeWings'),
-        'priority' => 125,
+        'priority' => 138,
     ));
 
     // Title

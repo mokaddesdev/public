@@ -1,3 +1,8 @@
+  <?php 
+        $title   = get_theme_mod('competition_item_title' );
+        $image   = get_theme_mod('competition_item_image');
+    ?>
+
 <section class="relative w-[1440px] px-[125px] mx-auto pt-[38px] pb-6">
 
     <!-- Foreground content layer -->
@@ -5,146 +10,38 @@
             <!-- left side text -->
             <div class="relative about-left pt-16 w-[569px] flex flex-col gap-5">
                 <h2 class="text-[#16396F] font-bebas text-[60px] font-normal leading-[60px] tracking-[1.2px] uppercase">
-                    <span class="text-[#F65600]">The items </span> they are looking for are
+                  <?php echo !empty($title) ?
+                   $title : ' <span class="text-[#F65600]">The items </span> they are looking for are'?>
                 </h2>
                <!-- item content  -->
                 <div class="w-[498.464px] flex flex-col gap-2">
                     <ul class=" flex flex-col gap-[21px]">
+                     <?php
+                      $competition_rules = new WP_Query([
+                          'post_type'      => 'competition_rules',
+                          'posts_per_page' => 8,
+                          'post_status'    => 'publish',
+                          'orderby'        => 'date',
+                          'order'          => 'DESC',
+                      ]);
+
+                      if ($competition_rules->have_posts()): 
+                          while($competition_rules->have_posts()): $competition_rules->the_post();
+                      ?>
                         <li class="flex -mt-1 gap-5 items-center">
                         <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
+                        <?php get_template_part('svg/checkicon'); ?>
                        </div>
 
                                 <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    Three separate bins or basins for dishwashing (wash, rinse and sterilise) They can be as simple as rubbermaid bins.
+                                   <?php echo esc_html(the_title()); ?>
                                 </p>
                         </li>
-                        <li class="flex -mt-1 gap-5 items-center">
-                          
-                         <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-
-                                <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    A basin for Clorox water for wiping down surfaces
-                                </p>
-                        </li>
-                       <li class="flex -mt-1 gap-5 items-center">
-
-                        <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-                        <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                            Clorox
-                            </p>
-                        </li>
-                       <li class="flex -mt-1.5 gap-5 items-center">
-
-                       <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-                        <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    An area with fresh water and soap for handwashing with hand soap and paper towels
-                                </p>
-                        </li>
-                         <li class="flex -mt-2 gap-5 items-center">
-
-                        <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-                        <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    Meat thermometer
-                                </p>
-                        </li>
-                         <li class="flex -mt-2.5 gap-5 items-center">
-
-                        <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-                        <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    Your meat will need to be on ice with a fridge thermometer. It must read 41F at time of inspection
-                                </p>
-                        </li>
-                         <li class="flex -mt-2.5 gap-5 items-center">
-
-                        <div class="w-[22px] h-[22px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                          <g clip-path="url(#clip0_2019_106)">
-                            <circle cx="11.7319" cy="11.1641" r="11" fill="#E9680C"/>
-                            <path d="M6.17334 10.4799L10.1076 14.4141L17.2918 7.91406" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2019_106">
-                              <rect width="22" height="22" fill="white" transform="translate(0.731934 0.164062)"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                       </div>
-                        <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
-                                    Disposable gloves
-                                </p>
-                        </li>
-
+                     <?php
+                     endwhile;
+                     wp_reset_postdata();
+                    endif;
+                        ?>
                     </ul>
 
                 </div>
@@ -160,10 +57,13 @@
                 </div>
 
                 <div class="absolute -top-3 -left-9 -mr-4">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rule3.png"
-                         alt="about image"
-                         class="w-[623px] h-[517px]">
+                    <img src="<?php echo !empty($image) 
+                        ? esc_url($image) 
+                        : esc_url(get_template_directory_uri() . '/assets/images/rule3.png'); ?>"
+                        alt="<?php echo esc_attr($title); ?>"
+                        class="w-[623px] h-[517px]">
                 </div>
+
             </div>
         </div>
         </div>

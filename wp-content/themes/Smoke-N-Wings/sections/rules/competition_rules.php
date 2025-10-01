@@ -1,3 +1,12 @@
+  <?php 
+        $title   = get_theme_mod('competition_rules_title' , ' SMOKE-N-WINGS <span class="text-[#F65600]">2024</span> RULES' );
+        $desc   = get_theme_mod('competition_rules_description' ,'As a KCBS sanctioned Master Series Contest, all KCBS rules will be followed. The event and the judging will be overseen by the KCBS Contest Representatives assigned to the event. Their decisions and interpretations are final.' );
+        $rules_card_description    = get_theme_mod('rules_card_description' , 'As a Master Series Contest, teams will cook four meats:
+        The Four KCBS Meat Categories are:');
+    ?>
+
+
+
 <section class="relative w-[1440px] mx-auto">
 
     <!-- Background huge text layer -->
@@ -12,11 +21,11 @@
         <div class="heading flex items-center justify-center flex-col gap-4">
 
             <h2 class="text-[#16396F] -mt-[2.66px] text-center font-bebas-pro text-[60px] font-normal leading-[81px] tracking-[1.2px] uppercase">
-                SMOKE-N-WINGS <span class="text-[#F65600]">2024</span> RULES
+                <?php echo wp_kses_post($title); ?>
             </h2>
 
             <p class="text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px] w-[740px] text-center">
-                As a KCBS sanctioned Master Series Contest, all KCBS rules will be followed. The event and the judging will be overseen by the KCBS Contest Representatives assigned to the event. Their decisions and interpretations are final.
+                 <?php echo wp_kses_post($desc); ?>
             </p>
         </div>
 
@@ -25,8 +34,9 @@
 
             <!-- heading -->
             <div class="top pt-[60px] -ml-3 text-black font-jost text-[24px] font-normal leading-normal tracking-[0.48px] flex flex-col gap-1">
-                <h3 class="pt-0.5">As a Master Series Contest, teams will cook four meats:</h3>
-                <p>The Four KCBS Meat Categories are:</p>
+                <h3 class="pt-0.5">
+                    <?php echo wp_kses_post(nl2br($rules_card_description))?>
+               </h3>
             </div>
 
             <!-- card wrapper -->

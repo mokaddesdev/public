@@ -8,7 +8,7 @@ function smokeWings_enter_competition_customizer($wp_customize) {
     // Section
     $wp_customize->add_section('enter_competition_section', array(
         'title'    => __('Enter Competition Form Settings', 'smokeWings'),
-        'priority' => 110,
+        'priority' => 150,
     ));
 
     // Title

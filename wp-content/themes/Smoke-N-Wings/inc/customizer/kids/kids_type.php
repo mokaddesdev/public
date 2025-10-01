@@ -5,17 +5,11 @@
  */
 function smokeWings_kids_type_section_heading_customizer($wp_customize) {
 
-    $wp_customize->add_section('kids_page_customizer', array(
-    'title'    => __('⭐ Kids Page Start ⭐', 'smokeWings'),
-    'priority' => 155,
-));
-
-
     //Settings
 
     $wp_customize->add_section('kids_type_section_heading_section', array(
         'title' => __('Kids Type Section Heading  Settings', 'smokeWings'),
-        'priority' => 165,
+        'priority' => 140,
     ));
 
 

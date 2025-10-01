@@ -4,7 +4,7 @@ function smokeWings_kids_section_heading_only($customizer) {
    // Section
     $customizer->add_section('kids_page_customizer', array(
         'title'    => __('⭐ Kids Page Start ⭐', 'smokeWings'),
-        'priority' => 155,
+        'priority' => 139,
     ));
 
     // শুধু heading দেখানোর জন্য setting

@@ -8,7 +8,7 @@ function smokeWings_contact_form_customizer($wp_customize) {
     // Section
     $wp_customize->add_section('contact_form_section', array(
         'title'    => __('Contact Form Settings', 'smokeWings'),
-        'priority' => 100,
+        'priority' => 148,
     ));
 
     // Title

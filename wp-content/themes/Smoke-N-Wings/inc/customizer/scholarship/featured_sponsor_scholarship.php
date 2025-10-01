@@ -8,7 +8,7 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
     // Section
     $wp_customize->add_section('featured_sponsor_scholarship_section', array(
         'title'    => __('Featured Sponsor Scholarship Settings', 'smokeWings'),
-        'priority' => 150,
+        'priority' => 146,
     ));
 
     // Title
