@@ -1,4 +1,4 @@
-<section class="w-[1440px] flex gap-[20px] pt-7 -mb-4 px-[105px]">
+<section class="w-[1440px] flex gap-[20px] pt-7 -mb-5 px-[105px]">
 
   <!-- left image -->
   <div class="w-[562.293px] ml-[2.50px] relative">

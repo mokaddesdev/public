@@ -16,9 +16,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -231,26 +228,14 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .-top-0 {
-    top: calc(var(--spacing) * -0);
-  }
   .-top-1 {
     top: calc(var(--spacing) * -1);
-  }
-  .-top-2 {
-    top: calc(var(--spacing) * -2);
-  }
-  .-top-2\.5 {
-    top: calc(var(--spacing) * -2.5);
   }
   .-top-3 {
     top: calc(var(--spacing) * -3);
   }
   .-top-3\.5 {
     top: calc(var(--spacing) * -3.5);
-  }
-  .-top-4 {
-    top: calc(var(--spacing) * -4);
   }
   .-top-6 {
     top: calc(var(--spacing) * -6);
@@ -309,32 +294,14 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-40 {
-    bottom: calc(var(--spacing) * 40);
-  }
-  .bottom-44 {
-    bottom: calc(var(--spacing) * 44);
-  }
-  .bottom-48 {
-    bottom: calc(var(--spacing) * 48);
-  }
   .bottom-52 {
     bottom: calc(var(--spacing) * 52);
-  }
-  .bottom-60 {
-    bottom: calc(var(--spacing) * 60);
-  }
-  .bottom-68 {
-    bottom: calc(var(--spacing) * 68);
   }
   .bottom-80 {
     bottom: calc(var(--spacing) * 80);
   }
   .-left-1 {
     left: calc(var(--spacing) * -1);
-  }
-  .-left-2 {
-    left: calc(var(--spacing) * -2);
   }
   .-left-3 {
     left: calc(var(--spacing) * -3);
@@ -365,9 +332,6 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
   }
   .left-5 {
     left: calc(var(--spacing) * 5);
@@ -507,12 +471,6 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
-  .-mr-1 {
-    margin-right: calc(var(--spacing) * -1);
-  }
-  .-mr-1\.5 {
-    margin-right: calc(var(--spacing) * -1.5);
-  }
   .-mr-3 {
     margin-right: calc(var(--spacing) * -3);
   }
@@ -525,11 +483,11 @@
   .-mr-8 {
     margin-right: calc(var(--spacing) * -8);
   }
-  .-mb-3 {
-    margin-bottom: calc(var(--spacing) * -3);
-  }
   .-mb-4 {
     margin-bottom: calc(var(--spacing) * -4);
+  }
+  .-mb-5 {
+    margin-bottom: calc(var(--spacing) * -5);
   }
   .-mb-\[91\.80px\] {
     margin-bottom: calc(91.80px * -1);
@@ -582,38 +540,17 @@
   .-ml-\[160px\] {
     margin-left: calc(160px * -1);
   }
-  .ml-0 {
-    margin-left: calc(var(--spacing) * 0);
-  }
-  .ml-0\.5 {
-    margin-left: calc(var(--spacing) * 0.5);
-  }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
-  .ml-2\.5 {
-    margin-left: calc(var(--spacing) * 2.5);
-  }
   .ml-13 {
     margin-left: calc(var(--spacing) * 13);
   }
-  .ml-\[1\.80px\] {
-    margin-left: 1.80px;
-  }
-  .ml-\[1\.90px\] {
-    margin-left: 1.90px;
-  }
-  .ml-\[1px\] {
-    margin-left: 1px;
-  }
   .ml-\[2\.50px\] {
     margin-left: 2.50px;
-  }
-  .ml-\[px\] {
-    margin-left: px;
   }
   .flex {
     display: flex;
@@ -642,20 +579,17 @@
   .h-\[2px\] {
     height: 2px;
   }
-  .h-\[4\.188px\] {
-    height: 4.188px;
-  }
   .h-\[9px\] {
     height: 9px;
   }
   .h-\[17\.076px\] {
     height: 17.076px;
   }
+  .h-\[22px\] {
+    height: 22px;
+  }
   .h-\[45px\] {
     height: 45px;
-  }
-  .h-\[49\.188px\] {
-    height: 49.188px;
   }
   .h-\[53px\] {
     height: 53px;
@@ -702,26 +636,11 @@
   .h-\[374px\] {
     height: 374px;
   }
-  .h-\[464\.188px\] {
-    height: 464.188px;
-  }
-  .h-\[484\.188px\] {
-    height: 484.188px;
-  }
-  .h-\[489\.188px\] {
-    height: 489.188px;
-  }
   .h-\[492\.188px\] {
     height: 492.188px;
   }
-  .h-\[494\.188px\] {
-    height: 494.188px;
-  }
   .h-\[495px\] {
     height: 495px;
-  }
-  .h-\[504\.188px\] {
-    height: 504.188px;
   }
   .h-\[515px\] {
     height: 515px;
@@ -743,9 +662,6 @@
   }
   .h-\[559\.469px\] {
     height: 559.469px;
-  }
-  .h-\[560\.469px\] {
-    height: 560.469px;
   }
   .h-\[585px\] {
     height: 585px;
@@ -800,6 +716,9 @@
   }
   .w-\[1px\] {
     width: 1px;
+  }
+  .w-\[22px\] {
+    width: 22px;
   }
   .w-\[53px\] {
     width: 53px;
@@ -861,9 +780,6 @@
   .w-\[564\.293px\] {
     width: 564.293px;
   }
-  .w-\[568\.293px\] {
-    width: 568.293px;
-  }
   .w-\[568px\] {
     width: 568px;
   }
@@ -896,9 +812,6 @@
   }
   .w-\[595px\] {
     width: 595px;
-  }
-  .w-\[600\.293px\] {
-    width: 600.293px;
   }
   .w-\[600px\] {
     width: 600px;
@@ -1122,9 +1035,6 @@
   .gap-\[2px\] {
     gap: 2px;
   }
-  .gap-\[4px\] {
-    gap: 4px;
-  }
   .gap-\[7\.558px\] {
     gap: 7.558px;
   }
@@ -1146,8 +1056,8 @@
   .gap-\[21px\] {
     gap: 21px;
   }
-  .gap-\[24px\] {
-    gap: 24px;
+  .gap-\[23px\] {
+    gap: 23px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -1164,17 +1074,11 @@
   .gap-\[38px\] {
     gap: 38px;
   }
-  .gap-\[42px\] {
-    gap: 42px;
-  }
   .gap-\[49px\] {
     gap: 49px;
   }
   .gap-\[50px\] {
     gap: 50px;
-  }
-  .gap-\[51px\] {
-    gap: 51px;
   }
   .gap-\[52\.50px\] {
     gap: 52.50px;
@@ -1187,9 +1091,6 @@
   }
   .gap-\[70px\] {
     gap: 70px;
-  }
-  .gap-\[px\] {
-    gap: px;
   }
   .gap-x-\[46px\] {
     column-gap: 46px;
@@ -1328,9 +1229,6 @@
   .px-\[5\%\] {
     padding-inline: 5%;
   }
-  .px-\[15px\] {
-    padding-inline: 15px;
-  }
   .px-\[24px\] {
     padding-inline: 24px;
   }
@@ -1447,9 +1345,6 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
@@ -1574,6 +1469,9 @@
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -1582,9 +1480,6 @@
   }
   .pb-13 {
     padding-bottom: calc(var(--spacing) * 13);
-  }
-  .pb-14 {
-    padding-bottom: calc(var(--spacing) * 14);
   }
   .pb-\[21\.56px\] {
     padding-bottom: 21.56px;
