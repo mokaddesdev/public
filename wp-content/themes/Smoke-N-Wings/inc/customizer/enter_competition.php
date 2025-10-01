@@ -25,7 +25,10 @@ function smokeWings_enter_competition_customizer($wp_customize) {
 
     // Description
     $wp_customize->add_setting('enter_competition_description', array(
-        'default' => 'We are excited to welcome your team to the 2024 SMOKE-N-WINGS BBQ CONTEST. Put your skills to the test for your chance to win cash prizes and be crowned the SMOKE-N-WINGS Grand Champion and the Idaho State Champion. <br><br> This KCBS sanctioned competition will be held June 28-29, 2024. Winning will make your team eligible for the American Royal and the Jack Daniels World Championship.',
+        'default' => 'We are excited to welcome your team to the 2024 SMOKE-N-WINGS BBQ CONTEST. Put your skills to the test for your chance to win cash prizes and be crowned the SMOKE-N-WINGS Grand Champion and the Idaho State Champion.
+        <br>
+        <br>
+        This KCBS sanctioned competition will be held June 28-29, 2024. Winning will make your team eligible for the American Royal and the Jack Daniels World Championship.',
         'sanitize_callback' => 'wp_kses_post',
     ));
 

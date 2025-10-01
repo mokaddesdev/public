@@ -2,6 +2,7 @@
     $title = get_theme_mod('enter_competition_title');
     $desc  = get_theme_mod('enter_competition_description');
     $form  = get_theme_mod('enter_competition_form_title');
+
     ?>
 
 
@@ -27,7 +28,7 @@
                     ?>
                 </h2>
 
-                <p class="text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px]">
+                <p class="text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px] pt-0.5">
               <?php
                     if ( ! empty( $desc ) ) {
                         echo wp_kses_post( $desc );

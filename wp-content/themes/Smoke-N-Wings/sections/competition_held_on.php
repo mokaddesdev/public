@@ -3,16 +3,17 @@
     <!-- Foreground content layer -->
     <div class="relative z-20 flex gap-12 w-full">
             <!-- left side text -->
-            <div class="relative about-left py-4 w-[600px] flex flex-col gap-9">
+            <div class="relative about-left pt-[19.60px] w-[600px] flex flex-col gap-7">
                 <h2 class="text-[#16396F] font-bebas-pro text-[60px] font-bold leading-[81px] tracking-[1.56px] uppercase">
                     The <span class="text-[#F65600]">competition</span> held on
                 </h2>
 
-                <p class="w-[570px] text-black font-jost text-[18px] font-normal leading-normal tracking-[0.36px]">
+                <p class="w-[570px] pt-[4.90px] text-black font-jost text-[18px] not-italic font-normal leading-normal tracking-[0.36px]">
                     The competition will be held on the tarmac at the Blackfoot Municipal Airport (McCarley Field).During the competition the area will continue to be an active airport.No guns, fireworks and all fire/flame must be contained within the cooking apparatus.Pets MUST be on a leash or contained at the teams cook site. There is a dog park just outside the airport gate.Vehicles must follow established traffic flow through the airport property.
-                    <br>
-                    <br>
-                    Each team site must have a fire extinguisher and if a stick burner is used some sort of ground protection must be used under the fire box. This may include sheet metal or cement board for.
+                </p>
+
+                <p class="w-[570px] text-black font-jost -mt-[7.93px] text-[18px] font-normal leading-normal tracking-[0.36px]"> Each team site must have a fire extinguisher and if a stick burner is used some sort of ground protection must be used under the fire box. This may include sheet metal or cement board for example.
+
                 </p>
             </div>
 
@@ -29,7 +30,7 @@
                 <div class="absolute -top-3 -left-9 -mr-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rule1.png"
                          alt="about image"
-                         class="w-[618px] h-[515px]">
+                         class="w-[622px] h-[519px]">
                 </div>
             </div>
         </div>

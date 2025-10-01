@@ -88,7 +88,7 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.team-address-inp
 }
 
 input.wpcf7-form-control.wpcf7-tel.wpcf7-validates-as-required.wpcf7-text.wpcf7-validates-as-tel.team-phone-input{
-    @apply w-[186px] outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px];
+    @apply w-[176px] ml-3 outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px];
 }
 select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.kcbs-member-input{
     @apply w-[205px] appearance-none outline-none text-[#333] font-jost text-[16px] font-normal leading-[24px] bg-white pl-2 pr-2;
@@ -117,7 +117,7 @@ input.wpcf7-form-control.wpcf7-text.kcbs-number-input{
 
 /* <!-- Agreement & Extra options --> */
 .read-checkbox-rule-label{
-   @apply text-[#16396F] font-jost text-[16px] font-semibold leading-normal tracking-[0.32px] not-italic;
+   @apply text-[#16396F] mt-0.5 font-jost text-[16px] font-semibold leading-normal tracking-[0.32px] not-italic;
 }
 
 .read-checkbox-rule{
@@ -137,17 +137,22 @@ span.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.read-rules{
 }
 
 .serve-food-help{
-    @apply mt-6 flex flex-col items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
+    @apply mt-6 flex flex-col overflow-hidden items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
 }
-.serve-food-help-label, .team-help-kid-prepare-label{
-   @apply text-[#16396F]  font-jost text-[16px] font-semibold leading-normal tracking-[0.32px] not-italic;
+
+.team-help-kid-prepare-label{
+   @apply text-[#16396F] font-jost text-[16px] not-italic font-semibold leading-normal tracking-[0.32px] uppercase;
+}
+
+.serve-food-help-label {
+     @apply text-[#16396F] font-jost text-[16px] not-italic font-semibold leading-normal tracking-[0.32px] uppercase;
 }
 
 .serve-food-help-input{
-    @apply -ml-4 -mt-7 text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic;
+    @apply -ml-8 -mt-8  text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic;
 }
 .serve-food-help-input span.wpcf7-list-item.first{
-         @apply flex bg-white items-center gap-[7px] w-[463px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
+         @apply flex bg-white items-center gap-[7px] w-[476px] h-[40px] p-[8px_12px] flex-shrink-0 border border-[rgba(246,86,0,0.1)];
 }
 
 .serve-food-help-input span.wpcf7-list-item.last{
@@ -156,7 +161,7 @@ span.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.read-rules{
 
 
 .team-help-kid-prepare {
-  @apply mt-5 flex flex-col items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
+  @apply mt-6 flex flex-col items-start gap-[15px] pb-2 px-[18px] w-full bg-[#FFF4EE];
 }
 
 .team-help-kid-prepare-input {
@@ -178,16 +183,22 @@ span.wpcf7-list-item-label{
     @apply ml-1;
 }
 
-span.wpcf7-list-item-label{
-      @apply text-black font-jost text-[12px] font-semibold leading-normal tracking-[0.24px] not-italic ;
+
+
+input#acceptance-rule-text{
+    @apply mt-8 -ml-4 pr-2.5;
 }
+
 .acceptance-rule-text{
-    @apply mt-8 -ml-4;
-   
+               @apply text-black w-[450px] font-jost text-[14px] font-semibold leading-normal tracking-[0.24px] not-italic ;
 }
 
 .entry-form{
     @apply mt-8;
+}
+
+input#entry-form{
+    @apply inline-block w-[512px] mt-8 h-[44px] bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[3px];
 }
 
 
