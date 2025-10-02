@@ -11,7 +11,7 @@
     <div class="footer-content mx-auto max-w-[1300px] flex flex-col md:flex-row items-center justify-start md:justify-between">
 
         <!-- footer left -->
-        <div class="footer-text text-center md:text-start w-full md:w-8/12">
+        <div class="footer-text text-center md:text-start w-full md:w-6/12">
             <a href="<?php echo home_url();?>">
             <h3 class="text-[#FFE4D5] font-bebas-pro text-[50px] sm:text-[56px] md:text-[80px] lg:text-[90px] 2xl:text-[115px] font-bold leading-[58px] sm:leading-[62px] md:leading-[85px] xl:leading-[95px] 2xl:leading-[102px] tracking-[2.3px] uppercase">
                 <?php echo wp_kses_post($footer_logo_title); ?> 
@@ -19,7 +19,7 @@
             </a>
         </div>
         <!-- footer right -->
-        <div class="footer-right flex flex-col items-center pt-3.5 md:pt-0 md:items-end w-full md:w-4/12">
+        <div class="footer-right flex flex-col items-center pt-3.5 md:pt-0 md:items-end w-full md:w-5/12 lg:w-4/12">
             <!-- footer button -->
             <div class="button">
                 <a href="<?php
@@ -30,31 +30,31 @@
                             $enter_link = '#';
                         }
                         echo $enter_link;
-                        ?>" class="inline-block w-full 2xl:w-[367px] 2xl:h-[45px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[48px] text-center">
+                        ?>" class="inline-block w-[250px] sm:w-[300px] md:w-[367px] h-[45px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[48px] text-center">
                     <?php echo $footer_button_text; ?>
                 </a>
 
             </div>
 
             <!-- footer menu -->
-            <div class="foote-menu w-full flex items-center justify-between pt-9">
+            <div class="foote-menu w-full px-[12%] sm:px-[18%] md:px-0 flex items-center justify-between pt-5 md:pt-9">
                 <nav>
                     <?php
                     wp_nav_menu(array(
                         "theme_location" => "smokeWings_footer_menu1",
                         'container' => false,
-                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
+                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
                         'fallback_cb' => false,
                     )); ?>
                 </nav>
 
-                <nav>
+                <nav class="-mt-8">
 
                     <?php
                     wp_nav_menu(array(
                         "theme_location" => "smokeWings_footer_menu2",
                         'container' => false,
-                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
+                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-base md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
                         'fallback_cb' => false,
                     )); ?>
 
@@ -66,12 +66,12 @@
 
     <!-- footer buttom -->
     <!-- divider and text -->
-    <div class="divider-text -mx-14 flex flex-col gap-5 pt-5">
+    <div class="divider-text mx-auto lg:-mx-10 flex flex-col gap-5 pt-5">
 
         <div class="mx-auto w-full scroll-px-5 max-w-[1400px] h-[2px] bg-[#FFFFFF]">
         </div>
 
-        <p class="text-[#FFE4D5] font-jost text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
+        <p class="text-[#FFE4D5] font-jost text-sm md:text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
             &copy; <?php echo esc_html__('Copyright', 'smokeWings'); ?>
             <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
             <?php echo esc_html__('All rights reserved', 'smokeWings'); ?>

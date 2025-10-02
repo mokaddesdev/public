@@ -5,13 +5,14 @@
       $faq_title = get_theme_mod('faqs_heading_title', 'Frequently <span class="text-[#F65600]"> Asked </span> Questions');
    ?>
 
-<section class="w-[1440px] pt-3 flex gap-[19.50px] px-[125px]">
+<section class="w-full pt-3 flex flex-col md:flex-row gap-[19.50px] px-[2.5%] md:px-[3.5%] lg:px-[7.5%] 2xl:px-[8.68%]">
   <!-- left image -->
-  <div class="w-[626px] relative">
-    <div class="absolute top-0 left-1 z-0">
-      <svg xmlns="http://www.w3.org/2000/svg" width="544" height="495" viewBox="0 0 544 495" fill="none">
-        <path d="M448.5 495H0V0H543.5L448.5 495Z" fill="#591419" />
-      </svg>
+  <div class=" w-full md:w-1/2 relative">
+    <div class="absolute top-0 right-0 z-0">
+      <!-- shape -->
+      <div class="shape w-[380px] h-[300px] md:h-[495px] md:w-[544px] bg-[#591419]"
+      style="clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 82.5% 100%);">
+    </div>
 
     </div>
     <!-- svg -->
@@ -19,13 +20,13 @@
       <!-- image -->
       <img src="<?php echo esc_url($faq_image); ?>"
         alt="<?php esc_attr(the_title()) ?>"
-        class="w-[574px] h-[495px] object-cover z-20">
+        class="w-full h-[300px] md:w-[574px] md:h-[495px] object-cover z-20">
     </div>
 
   </div>
 
   <!-- right faqs -->
-  <div class=" bg-white w-[626px]">
+  <div class=" bg-white w-full md:w-1/2">
 
     <h2 class="text-[#16396F] text-right font-bebas-pro text-[78px] font-bold leading-[81px] tracking-[1.56px] uppercase py-8">
       <?php echo wp_kses_post(nl2br($faq_title)); ?>
