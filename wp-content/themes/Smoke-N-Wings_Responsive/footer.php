@@ -30,8 +30,11 @@
                             $enter_link = '#';
                         }
                         echo $enter_link;
-                        ?>" class="inline-block w-[250px] sm:w-[300px] md:w-[367px] hader-footer-btn text-center">
-                    <?php echo $footer_button_text; ?>
+                        ?>" class="w-[250px] sm:w-[300px] md:w-[367px] header-footer-btn">
+                        <span>
+                              <?php echo $footer_button_text; ?>
+                        </span>
+                    
                 </a>
 
             </div>

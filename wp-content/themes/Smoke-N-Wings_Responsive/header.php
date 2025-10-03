@@ -42,11 +42,14 @@
      <!-- desktop button -->
     <div class="button pr-3.5 hidden md:block">
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>" 
-           class="hader-footer-btn flex items-center justify-center">
-            <?php echo esc_html( get_theme_mod(
+           class="header-footer-btn">
+           <span>
+                <?php echo esc_html( get_theme_mod(
                 'header_button_text',
                 'Enter Competition' 
             ) ); ?>
+           </span>
+           
         </a>
     </div>
 
@@ -73,11 +76,14 @@
          <!-- mobile button -->
     <div class="button pr-3.5">
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>" 
-           class="hader-footer-btn flex items-center justify-center">
-            <?php echo esc_html( get_theme_mod(
+           class="header-footer-btn">
+           <span>
+                  <?php echo esc_html( get_theme_mod(
                 'header_button_text',
                 'Enter Competition' 
             ) ); ?>
+           </span>
+           
         </a>
     </div>
     </nav>

@@ -44,14 +44,14 @@ $image   = get_theme_mod('featured_sponsor_image');
                         }
                         echo $enter_link;
                         ?>"
-                       class="inline-block w-[273px] h-[60px] flex-shrink-0 bg-[#F65600]
-                       text-white font-bebas text-[24px] font-normal leading-[30.233px] uppercase 
-                       py-[15.25px] px-[30px] text-center">
+                       class="red-btn">
+                       <span>
                         <?php
                         echo ! empty($btn_txt)
                             ? esc_html($btn_txt)
                             : 'ENTER THE COMPETITION';
                         ?>
+                        </span>
                     </a>
                 </div>
 

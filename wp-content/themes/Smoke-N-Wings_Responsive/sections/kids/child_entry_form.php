@@ -55,10 +55,10 @@
 
             <div class="button pt-3">
                 <a href="<?php echo esc_url($enter_link); ?>"
-                   class="inline-block w-[273px] h-[60px] flex-shrink-0 bg-[#F65600]
-                   text-white font-bebas text-[24px] font-normal leading-[30.233px] uppercase 
-                   py-[15.25px] px-[30px] text-center">
-                    <?php echo esc_html($btn_txt); ?>
+                   class="red-btn">
+                   <span>
+                         <?php echo esc_html($btn_txt); ?>
+                   </span>
                 </a>
             </div>
         </div>

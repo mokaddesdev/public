@@ -74,8 +74,10 @@
 
                     <!-- button -->
                     <div class="flex justify-center mt-[18px] ml-2">
-                      <button class="flex w-[273px] justify-center gap-[7.558px]  border-[1.08px] border-[#16396F] bg-[#16396F] btn-text">
-                            Buy now
+                      <button class="blue-btn">
+                            <span>
+                                <?php echo esc_html_e("Buy now", "smokeWings");?>
+                            </span>
                         </button>
                     </div>
                 </div>

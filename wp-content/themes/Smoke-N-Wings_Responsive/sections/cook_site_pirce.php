@@ -54,10 +54,13 @@ if ( $hav_query->have_posts() ) :
     </h3>
 
     <!-- Button -->
-    <button
-      class="mt-6 flex justify-center items-center w-[273px] h-[60px] px-[30.233px] py-[15.117px] gap-[7.558px] flex-shrink-0 border-[1.08px] border-[#16396F] bg-[#16396F] text-white font-bebas text-[24px] font-normal leading-[30.233px] not-italic">
-      <?php echo __("Buy now", "smokeWings");?>
-    </button>
+    <a
+      class="blue-btn mt-6 ">
+      <span>
+          <?php echo esc_html_e("Buy now", "smokeWings");?>
+      </span>
+      
+    </a>
   </div>
 </article>
         <?php

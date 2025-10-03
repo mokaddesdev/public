@@ -37,12 +37,15 @@
                         }
                         echo $enter_link;
                         ?>"
-                       class="w-[273px] bg-[#F65600] btn-text">
-                        <?php
+                       class="red-btn">
+                       <span>
+                             <?php
                         echo ! empty($btn_txt)
                             ? esc_html($btn_txt)
                             : 'ENTER THE COMPETITION';
                         ?>
+                       </span>
+                       
                     </a>
                 </div>
             </div>

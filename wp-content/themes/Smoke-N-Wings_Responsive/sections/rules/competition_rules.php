@@ -1,8 +1,9 @@
   <?php 
         $title   = get_theme_mod('competition_rules_title' , ' SMOKE-N-WINGS <span class="text-[#F65600]">2024</span> RULES' );
+
         $desc   = get_theme_mod('competition_rules_description' ,'As a KCBS sanctioned Master Series Contest, all KCBS rules will be followed. The event and the judging will be overseen by the KCBS Contest Representatives assigned to the event. Their decisions and interpretations are final.' );
-        $rules_card_description    = get_theme_mod('rules_card_description' , 'As a Master Series Contest, teams will cook four meats:
-        The Four KCBS Meat Categories are:');
+
+        $rules_card_description    = get_theme_mod('rules_card_description' , 'As a Master Series Contest, teams will cook four meats: The Four KCBS Meat Categories are:');
     ?>
 
 
@@ -108,9 +109,13 @@
                             <div class="w-[273px] h-[60px]">
                      <a href="<?php echo get_permalink(get_page_by_path('enter')); ?>">
                                 <!-- Button -->
-                          <button class=" bg-[#16396F] cursor-pointer  w-full h-full text-white font-bebas text-[24px] font-normal leading-[30.233px] px-[30.50px] py-[15.30px]">
-                                    ENTER THE COMPETITION
-                                </button>
+                                  <a
+                                    class="blue-btn mt-6 ">
+                                    <span>
+                                    <?php echo esc_html_e("ENTER THE COMPETITION", "smokeWings");?>
+                                    </span>
+                                    
+                                    </a>
                                  </a>
                                 </div>
                             </div>

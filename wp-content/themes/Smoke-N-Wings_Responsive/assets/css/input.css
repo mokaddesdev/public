@@ -48,16 +48,88 @@ ul, li {
 
 /* Header Footer Button */
 
-.hader-footer-btn{
-    @apply text-white text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase font-bebas-pro py-2.5 px-[34px] bg-[#F65600];
+.header-footer-btn{
+    @apply inline-block text-center text-white text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase font-bebas-pro py-2.5 px-[34px] bg-[#F65600] border-[1.08px] border-[#F65600] relative overflow-hidden transition-all duration-500 ease-out cursor-pointer;
 }
 
+.header-footer-btn::before {
+    content: "";
+    @apply absolute left-0 bottom-0 w-full h-0 bg-[#16396F] transition-all duration-500 ease-out cursor-pointer;
+    z-index: 0;
+}
+
+.header-footer-btn:hover::before {
+    @apply h-full;
+}
+
+.header-footer-btn span {
+    @apply relative z-10 text-white ;
+}
+
+/* menu text */
 .menu-text{
     @apply text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase font-bebas-pro;
 }
-.btn-text{
-    @apply inline-block text-center text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-[30.233px] font-bebas py-[15.22px] px-[30.50px];
+
+/* Blue Button */
+.blue-btn{
+    @apply inline-block text-center text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-[30.233px] font-bebas py-[15.22px] px-[30.50px] w-[273px] border-[1.08px] border-[#16396F] bg-[#16396F] relative overflow-hidden transition-all duration-500 ease-out;
 }
+
+.blue-btn::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-0 bg-[#F65600] transition-all duration-500 ease-out;
+    z-index: 0;
+}
+
+.blue-btn:hover::before {
+    @apply h-full;
+}
+
+.blue-btn span {
+    @apply relative z-10 text-white;
+}
+
+
+/* Blue Button */
+.blue-btn{
+    @apply inline-block text-center text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-[30.233px] font-bebas py-[15.22px] px-[30.50px] w-[273px] border-[1.08px] border-[#16396F] bg-[#16396F] relative overflow-hidden transition-all duration-500 ease-out cursor-pointer;
+}
+
+.blue-btn::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-0 bg-[#F65600] transition-all duration-500 ease-out cursor-pointer;
+    z-index: 0;
+}
+
+.blue-btn:hover::before {
+    @apply h-full;
+}
+
+.blue-btn span {
+    @apply relative z-10 text-white;
+}
+
+/* Red Button */
+.red-btn{
+    @apply inline-block text-center text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-[30.233px] font-bebas py-[15.22px] px-[30.50px] w-[273px] border-[1.08px] border-[#F65600] bg-[#F65600] relative overflow-hidden transition-all duration-500 ease-out cursor-pointer;
+}
+
+.red-btn::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-0 bg-[#16396F] transition-all duration-500 ease-out cursor-pointer;
+    z-index: 0;
+}
+
+.red-btn:hover::before {
+    @apply h-full;
+}
+
+.red-btn span {
+    @apply relative z-10 text-white ;
+}
+
+
 
 
 /* =======
