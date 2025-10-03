@@ -22,7 +22,7 @@
                     ?>
             
         </h2> 
-        <p class="text-black text-center font-['Jost'] text-[18px] font-normal leading-normal tracking-[0.36px]">
+        <p class="text-black text-center font-jost text-[18px] font-normal leading-normal tracking-[0.36px]">
              <?php
                     echo ! empty($desc)
                         ? wp_kses_post($desc)
@@ -74,7 +74,7 @@
 
                     <!-- button -->
                     <div class="flex justify-center mt-[18px] ml-2">
-                        <button class="flex w-[273px] h-[60px] px-[30.233px] py-[15.117px] justify-center items-center gap-[7.558px] flex-shrink-0 border-[1.08px] border-[#16396F] bg-[#16396F] text-white font-['Bebas_Neue'] text-[24px] font-normal leading-[30.233px]">
+                      <button class="flex w-[273px] justify-center gap-[7.558px]  border-[1.08px] border-[#16396F] bg-[#16396F] btn-text">
                             Buy now
                         </button>
                     </div>

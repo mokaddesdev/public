@@ -38,9 +38,8 @@
                         }
                         echo $enter_link;
                         ?>"
-                       class="inline-block w-[273px] h-[60px] flex-shrink-0 bg-[#F65600]
-                       text-white font-bebas text-[24px] font-normal leading-[30.233px] uppercase 
-                       py-[15.25px] px-[30px] text-center">
+                       class="btn-text w-[273px] bg-[#F65600]
+                      ">
                         <?php
                         echo ! empty($btn_txt)
                             ? esc_html($btn_txt)

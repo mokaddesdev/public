@@ -46,6 +46,19 @@ ul, li {
    @apply text-[48px] font-bebas-pro font-extrabold uppercase tracking-[0.96px] text-white leading-[1];
 }
 
+/* Header Footer Button */
+
+.hader-footer-btn{
+    @apply text-white text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase font-bebas-pro py-2.5 px-[34px] bg-[#F65600];
+}
+
+.menu-text{
+    @apply text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase font-bebas-pro;
+}
+.btn-text{
+    @apply inline-block text-center text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-[30.233px] font-bebas py-[15.22px] px-[30.50px];
+}
+
 
 /* =======
  Entry Form Desing 

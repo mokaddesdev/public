@@ -33,7 +33,7 @@
         wp_nav_menu([
             'theme_location' => 'smokeWings_header_menu',
             'container'      => false,
-            'menu_class'     => 'pt-1.5 flex items-center gap-3 lg:gap-6 xl:gap-[31px] text-black font-bebas-pro font-extrabold text-base lg:text-[18px] xl:text-[20px] leading-[1] tracking-[0.4px] uppercase',
+            'menu_class'     => 'pt-1.5 flex items-center gap-3 lg:gap-6 xl:gap-[31px] text-black menu-text',
             'fallback_cb'    => false,
         ]);
         ?>
@@ -42,7 +42,7 @@
      <!-- desktop button -->
     <div class="button pr-3.5 hidden md:block">
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>" 
-           class="w-[150px] lg:w-[186px] xl:w-[196px] h-[45px] bg-[#F65600] text-white font-bebas-pro font-extrabold text-base xl:text-[20px] uppercase flex items-center justify-center">
+           class="hader-footer-btn flex items-center justify-center">
             <?php echo esc_html( get_theme_mod(
                 'header_button_text',
                 'Enter Competition' 
@@ -65,7 +65,7 @@
         wp_nav_menu([
             'theme_location' => 'smokeWings_header_menu',
             'container'      => false,
-            'menu_class'     => 'flex flex-col items-start gap-3 text-black font-bebas-pro font-extrabold text-[18px] leading-[1] tracking-[0.4px] uppercase',
+            'menu_class'     => 'menu-text text-black flex flex-col items-start gap-3',
             'fallback_cb'    => false,
         ]);
         ?>
@@ -73,7 +73,7 @@
          <!-- mobile button -->
     <div class="button pr-3.5">
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>" 
-           class="w-[146px] h-[45px] bg-[#F65600] text-white font-bebas-pro font-extrabold text-[18px] uppercase flex items-center justify-center">
+           class="hader-footer-btn flex items-center justify-center">
             <?php echo esc_html( get_theme_mod(
                 'header_button_text',
                 'Enter Competition' 

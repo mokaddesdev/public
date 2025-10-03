@@ -30,7 +30,7 @@
                             $enter_link = '#';
                         }
                         echo $enter_link;
-                        ?>" class="inline-block w-[250px] sm:w-[300px] md:w-[367px] h-[45px] flex-shrink-0 bg-[#F65600] text-white font-bebas-pro font-extrabold text-[20px] leading-[1] tracking-[0.4px] uppercase py-[13.99px] px-[48px] text-center">
+                        ?>" class="inline-block w-[250px] sm:w-[300px] md:w-[367px] hader-footer-btn text-center">
                     <?php echo $footer_button_text; ?>
                 </a>
 
@@ -43,7 +43,7 @@
                     wp_nav_menu(array(
                         "theme_location" => "smokeWings_footer_menu1",
                         'container' => false,
-                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-[18px] md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
+                        'menu_class' => 'menu-text text-[#FFE4D5] flex flex-col gap-3',
                         'fallback_cb' => false,
                     )); ?>
                 </nav>
@@ -54,7 +54,7 @@
                     wp_nav_menu(array(
                         "theme_location" => "smokeWings_footer_menu2",
                         'container' => false,
-                        'menu_class' => 'flex flex-col gap-3 text-[#FFE4D5] font-bebas-pro text-base md:text-[20px] font-bold leading-normal tracking-[0.4px] uppercase',
+                        'menu_class' => 'flex flex-col gap-3 menu-text text-[#FFE4D5]',
                         'fallback_cb' => false,
                     )); ?>
 

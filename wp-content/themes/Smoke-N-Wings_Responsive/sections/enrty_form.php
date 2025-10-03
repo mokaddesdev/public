@@ -40,16 +40,17 @@
                         ?>
                     </p>
 
-                    <div class="pl-4 pt-4 flex flex-col gap-9">
+               <!-- Contact Info crad -->
+                    <div class="px-[7.5%] md:pl-4 pt-4 w-full flex flex-col gap-9">
                         <!-- email box -->
-                        <div class=" w-full md:w-[469px] h-[99px] flex-shrink-0 bg-[#FFF4EE] flex items-center justify-between">
+                        <div class="w-full md:w-[469px] h-[60px] md:h-[99px] bg-[#FFF4EE] flex items-center justify-between">
 
                             <!-- email icon box -->
                                 <?php get_template_part('svg/email_icon') ?>
                 
 
                             <!-- email -->
-                            <p class="text-[#16396F] font-bebas text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
+                            <p class="text-[#16396F] font-bebas text-[16px] sm:text-[20px] xl:text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
                                 <?php echo esc_html(get_theme_mod('company_email', 'smokenwingsbbq@gmail.com')); ?>
 
                             </p>
@@ -58,14 +59,14 @@
 
                         </div>
 
-                        <div class="w-full md:w-[469px] h-[99px] flex-shrink-0 bg-[#FFF4EE] flex items-center justify-between">
+                        <div class="w-full md:w-[469px] h-[60px] md:h-[99px] bg-[#FFF4EE] flex items-center justify-between">
 
                             <!-- Left icon box -->
 
                                 <?php get_template_part('svg/calender_icon') ?>
 
                             <!-- Center text -->
-                            <p class="text-[#16396F] font-bebas text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
+                            <p class="text-[#16396F] font-bebas text-[16px] sm:text-[20px] xl:text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
                                 <?php echo esc_html(get_theme_mod('service_time', 'Mon - Fri 09:00 - 18:00')); ?>
                             </p>
 
@@ -74,13 +75,13 @@
 
                         </div>
 
-                        <div class="w-full md:w-[469px] h-[99px] flex-shrink-0 bg-[#FFF4EE] flex items-center justify-between">
+                        <div class="w-full md:w-[469px] h-[60px] md:h-[99px] flex-shrink-0 bg-[#FFF4EE] flex items-center justify-between">
 
                             <!-- Left icon box -->
                                 <?php get_template_part('svg/contact_icon_svg') ?>
                                 
                             <!-- Center text -->
-                            <p class="text-[#16396F] font-bebas text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
+                            <p class="text-[#16396F] font-bebas text-[16px] sm:text-[20px] xl:text-[23px] pt-1 font-normal leading-[81px] tracking-[0.46px] uppercase">
                                 <?php echo esc_html(get_theme_mod('company_phone', 'Call (800) 123 45 67')); ?>
                             </p>
 
@@ -97,8 +98,8 @@
 
             <!-- right side image with SVG overlay -->
             <!-- right -->
-            <div class="w-full md:w-[41.04%] h-[1397px] -ml-1 flex-shrink-0 bg-white pt-4 px-2 xl:px-[39.5px] mx-auto" style="box-shadow: -12px 49px 94px 0 rgba(85,89,90,0.05);">
-                <h2 class="text-[#16396F] font-bebas text-[38px] font-normal leading-[44px] md:leading-[55px] xl:leading-[81px] tracking-[0.76px] uppercase">
+          <div class="w-full md:w-[41.04%] h-[1397px] flex flex-col items-center -ml-1 bg-white pt-4 px-2 xl:px-[39.5px] mx-auto" style="box-shadow: -12px 49px 94px 0 rgba(85,89,90,0.05);">
+                <h2 class="text-[#16396F] max-w-[220px] text-center md:text-start font-bebas text-[26px] sm:text-[29px] md:text-[32px] xl:text-[38px] font-normal leading-[44px] md:leading-[55px] xl:leading-[81px] tracking-[0.76px] uppercase">
                     <?php
                     if (! empty($form)) {
                         echo wp_kses_post($form);
