@@ -6,10 +6,13 @@
 
         ?>
 
-<section class="relative w-[1440px] px-[95px] mx-auto pt-[58px] pb-10 flex gap-[50px]">
+<section class="relative w-full px-[2.5%] md:px-[3.5%] lg:px-[5%] xl:px-[6.8%] mx-auto pt-7 sm:pt-9 md:pt-10 lg:pt-11 xl:pt-[58px] pb-10 overflow-hidden">
+
+            <!-- container -->
+   <div class="w-full max-w-[1300px] flex flex-col md:flex-row gap-8 sm:gap-9 md:gap-11 xl:gap-[50px]">
 
             <!-- left side text -->
-            <div class="relative  w-[624px] flex pt-16 flex-col gap-8">
+            <div class="relative w-full md:w-[49.9%] flex pt-8 sm:pt-10 md:pt-12 lg:pt-16 flex-col items-center md:items-start gap-5 md:gap-7 lg:gap-8">
                 <h2 class="body-heading leading-trim">
                      <?php
                     echo ! empty($title)
@@ -19,7 +22,7 @@
                     
                 </h2>
 
-                <p class="w-[624px] body-text">
+                <p class="w-full body-text">
                      <?php
                     echo ! empty($desc)
                         ? wp_kses_post($desc)
@@ -51,23 +54,23 @@
             </div>
 
         <!-- right side image with SVG overlay -->
-        <div class="relative  w-[593px]">
-            <div class="relative w-full h-[495px]">
-                <div class="-ml-5">
+        <div class="relative w-full md:w-[47.5%]">
+            <div class="relative w-full h-[260px] md:h-[495px]">
+              <div class=" ml-0 md:-ml-5">
                 <!-- svg -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="594" height="495" viewBox="0 0 594 495" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 594 495" fill="none">
                     <path d="M95 495H593.5V0H0L95 495Z" fill="#591419"/>
                 </svg> 
                 </div>
 
-                <div class="absolute -top-3 -left-9 -mr-3">
+                <div class="absolute w-full h-[380px] md:w-[621px] md:h-[518px] left-0 md:-top-3 md:-left-9 -mr-3">
                     <img src="<?php
                             echo ! empty($image)
                                 ? esc_url($image)
                                 : esc_url( get_template_directory_uri() . '/assets/images/youngerdivision.png' );
-                        ?>" alt="<?php echo esc_attr(! empty($title) ? $title : 'Younger Division'); ?>" class="w-[621px] h-[518px]">
+                        ?>" alt="<?php echo esc_attr(! empty($title) ? $title : 'Younger Division'); ?>" class="w-full h-full object-contain">
                 </div>
             </div>
         </div>
-        </div>
+     </div>
 </section>
