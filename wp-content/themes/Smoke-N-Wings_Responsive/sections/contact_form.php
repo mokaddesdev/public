@@ -1,4 +1,4 @@
-<section class="relative w-[1440px] pl-[127px] pb-[35px] pr-[40px] mx-auto py-5">
+<section class="relative w-[1440px] pl-[127px] pt-[108px] pb-[35px] pr-[40px] mx-auto py-5">
 
     <!-- Background huge text layer -->
     <div class="absolute top-6 right-0 z-10 opacity-100">
@@ -6,7 +6,7 @@
     </div>
 
     <!-- Foreground content layer -->
-    <div class="relative z-20 pt-[108px] w-full">
+    <div class="relative z-20  w-full">
         <!-- left and right -->
         <div class="flex gap-[10px]">
             <!-- left side text -->

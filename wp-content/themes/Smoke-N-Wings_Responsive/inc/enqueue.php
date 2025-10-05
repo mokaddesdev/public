@@ -22,6 +22,16 @@ function laundryclean_enqueue_scripts() {
 
     // Custom JS
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom-js.js', ['jquery', 'slick-js'], filemtime(get_template_directory() . '/assets/js/custom-js.js'), true);
+     
+    // cookie-js
+    wp_enqueue_script('cookie-js', get_template_directory_uri() . '/assets/js/cookie-js.js', ['jquery'], filemtime(get_template_directory() . '/assets/js/cookie-js.js'), true);
+
+     wp_localize_script('cookie-js', 'cookieData', array(
+        'ajax_url'   => admin_url('admin-ajax.php'),
+        'nonce'      => wp_create_nonce('cookie_nonce'),
+        'expire_days'=> 365
+    ));
+    
 }
 add_action('wp_enqueue_scripts', 'laundryclean_enqueue_scripts');
 

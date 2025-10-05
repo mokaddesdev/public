@@ -69,6 +69,22 @@ include_once get_template_directory() . '/inc/CPT/kids_cooksite.php';
 include_once get_template_directory() . '/inc/CPT/sponsors.php';
 include_once get_template_directory() . '/inc/CPT/competition_rule.php';
 
+require get_template_directory() . '/inc/cookie.php';
+
+get_template_part('inc/preloader');
+
+
+
+function allow_svg_uploads($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_uploads');
+
+
+
+
+
 
 
 
