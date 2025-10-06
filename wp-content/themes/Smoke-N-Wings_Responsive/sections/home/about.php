@@ -7,43 +7,20 @@ $about_left_image = get_theme_mod('about_left_image', get_template_directory_uri
 
 <section class="relative w-full mx-auto 
   px-[4%] sm:px-[5%] md:px-[6%] lg:px-[7%] xl:px-[8.5%] 
-  pt-[60px] sm:pt-[80px] md:pt-[90px] lg:pt-[97px]">
+  pt-[60px] sm:pt-[80px] md:pt-[90px] lg:pt-[97px] 
+  max-w-[1300px]">
 
   <!-- Background huge text layer -->
-  <div class="absolute top-[25px] sm:top-[35px] md:top-[42px] left-[4%] sm:left-[5%] z-10 opacity-100">
+  <div class="absolute -top-[25px] sm:-top-[35px] md:-top-[42px] left-0 z-10 opacity-100 mx-auto">
       <?php get_template_part("svg/smoke_in_wings_svg");?>
   </div>
 
-  <!-- Foreground content -->
-  <div class="relative z-20 flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-14 w-full max-w-[1300px] mx-auto">
+  <!-- Grid layout -->
+  <div class="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-14 items-center">
 
-    <!-- Left text side -->
-    <div class="about-left w-full md:w-[50%] lg:w-[47%] flex flex-col 
-                items-center md:items-start text-center md:text-left 
-                gap-4 sm:gap-6 md:gap-7 lg:gap-8 py-[10px]">
-
-        <?php if(!empty($about_title)): ?>
-        <h2 class="text-[#16396F] 
-                   font-bebas-pro font-bold uppercase
-                   text-[48px] sm:text-[60px] md:text-[70px] lg:text-[78px]
-                   leading-[1.1] tracking-[1.2px] max-w-[95%] sm:max-w-[550px]">
-            <?php echo wp_kses_post($about_title); ?>
-        </h2>
-        <?php endif; ?>
-
-        <?php if(!empty($about_description)): ?>
-        <p class="text-black font-jost font-normal 
-                  text-[16px] sm:text-[18px] md:text-[19px] 
-                  leading-relaxed tracking-[0.3px] 
-                  max-w-[95%] sm:max-w-[533px]">
-            <?php echo wp_kses_post(nl2br($about_description)); ?>
-        </p>
-        <?php endif; ?>
-    </div>
-
-    <!-- Right image + SVG -->
-    <div class="relative w-full md:w-[50%] lg:w-[53%] flex justify-center md:justify-end">
-      <div class="relative w-[90%] sm:w-[85%] md:w-[80%] lg:w-[595px] aspect-[594/495]">
+    <!-- Right image + SVG (Show first on mobile) -->
+    <div class="relative w-full flex justify-center md:justify-end order-1 md:order-2">
+      <div class="relative w-[90%] sm:w-[85%] md:w-[500px] lg:w-[595px] aspect-[594/495]">
 
         <!-- background SVG shape -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 495" fill="none" class="w-full h-full">
@@ -52,7 +29,7 @@ $about_left_image = get_theme_mod('about_left_image', get_template_directory_uri
 
         <!-- main image -->
         <?php if(!empty($about_left_image)): ?>
-        <div class="absolute -top-[1.5%] -left-[1.5%] w-[103%] h-[103%]">
+        <div class="absolute -top-[2%] -left-[2%] -mr-1.5 w-[104%] h-[104%]">
           <img src="<?php echo esc_url($about_left_image); ?>" 
                alt="about image" 
                class="w-full h-full object-contain">
@@ -63,7 +40,7 @@ $about_left_image = get_theme_mod('about_left_image', get_template_directory_uri
         <a href="<?php
             $enter_page = get_page_by_path('enter');
             echo $enter_page ? esc_url(get_permalink($enter_page)) : '#';
-        ?>" class="absolute bottom-0 left-0 w-full">
+        ?>" class="absolute bottom-0 xl:bottom-11 left-0 w-full">
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 89" fill="none" class="w-full h-auto">
             <path d="M593.5 89H0L17.6895 0H593.5V89Z" fill="#16396F"/>
@@ -80,5 +57,28 @@ $about_left_image = get_theme_mod('about_left_image', get_template_directory_uri
         </a>
       </div>
     </div>
+
+    <!-- Left text side (Show after image on mobile) -->
+    <div class="about-left w-full flex flex-col items-center md:items-start text-center md:text-left gap-4 sm:gap-6 md:gap-7 lg:gap-8 pt-[30px] order-2 md:order-1">
+
+        <?php if(!empty($about_title)): ?>
+        <h2 class="text-[#16396F] font-bebas-pro font-bold uppercase 
+                   text-[48px] sm:text-[60px] md:text-[45px] lg:text-[78px] 
+                   leading-[1.1] tracking-[1.2px] 
+                   max-w-[95%] sm:max-w-[550px]">
+            <?php echo wp_kses_post($about_title); ?>
+        </h2>
+        <?php endif; ?>
+
+        <?php if(!empty($about_description)): ?>
+        <p class="text-black font-jost font-normal 
+                  text-[16px] sm:text-[18px] lg:text-[19px] 
+                  leading-relaxed tracking-[0.3px] 
+                  max-w-[95%] sm:max-w-[533px]">
+            <?php echo wp_kses_post(nl2br($about_description)); ?>
+        </p>
+        <?php endif; ?>
+    </div>
+
   </div>
 </section>
