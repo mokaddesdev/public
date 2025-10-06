@@ -1,4 +1,4 @@
- <div class="w-[44px] h-[44px] md:w-[54px] md:h-[54px]  xl:w-[74px] xl:h-[74px] flex-shrink-0 bg-[#16396F] flex items-center justify-center">
+
        <svg  xmlns="http://www.w3.org/2000/svg" class="w-[70%] h-[70%]" viewBox="0 0 42 42" fill="none">
             <path d="M38.5 7H3.5V38.5H38.5V7Z" stroke="white" stroke-width="2.625" />
             <path d="M12.25 3.5V10.5" stroke="white" stroke-width="2.625" />
@@ -9,4 +9,3 @@
             <path d="M29.75 3.5V10.5" stroke="white" stroke-width="2.625" />
             <path d="M3.5 15.75H38.5" stroke="white" stroke-width="2.625" />
         </svg>
-     </div>

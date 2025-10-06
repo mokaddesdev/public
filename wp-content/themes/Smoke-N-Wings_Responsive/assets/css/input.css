@@ -49,7 +49,7 @@ ul, li {
 }
 
 .body-heading{
-    @apply text-[#16396F] text-center font-bebas text-[42px] sm:text-[44px] md:text-[48px] lg:text-[52px] xl:text-[60px] font-normal leading-[46px] md:leading-[61px] xl:leading-[81px] tracking-[1.2px] uppercase;
+    @apply text-[#16396F] font-bebas text-[42px] sm:text-[44px] md:text-[48px] lg:text-[52px] xl:text-[60px] font-normal leading-[46px] md:leading-[61px] xl:leading-[81px] tracking-[1.2px] uppercase;
 
 }
 /* ==========================
@@ -368,26 +368,28 @@ textarea#child-message{
 
 }
 
+
+
 /* contact form design */
 .first_name-email {
-  @apply flex flex-col sm:flex-row gap-[20px] sm:gap-[29px] mt-3 mb-5;
+  @apply flex flex-col sm:flex-row md:flex-col lg:flex-row gap-[20px] sm:gap-[29px] mt-3 mb-5;
 }
 
 input#first-name-input,
 input#contact-email {
-  @apply text-[#7C7C7C] w-full sm:w-[240.60px] font-jost text-[16px] font-normal leading-[24px] px-3.5 pt-[14px] pb-2 mt-0.5 outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] w-full xl:w-[240.60px] font-jost text-[16px] font-normal leading-[24px] px-3.5 pt-[14px] pb-2 mt-0.5 outline-none border border-[#CCCCCC];
 }
 
 input#contact-subject {
-  @apply text-[#7C7C7C] w-full sm:w-[512px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[12px] mt-1.5 mb-5 outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] w-full xl:w-[512px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[12px] mt-1.5 mb-5 outline-none border border-[#CCCCCC];
 }
 
 textarea#contact-message {
-  @apply text-[#7C7C7C] w-full sm:w-[512px] h-[128px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[10px] outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] w-full xl:w-[512px] h-[128px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[10px] outline-none border border-[#CCCCCC];
 }
-
+ /* button  */
 input#contact-form {
-  @apply inline-block w-full sm:w-[512px] mt-8 h-[48px] bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[6px];
+  @apply inline-block w-full sm:w-[302px]  md:w-[280px] lg:w-[360px] xl:w-[512px] mt-8 h-[48px] bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[6px];
 }
 
 
