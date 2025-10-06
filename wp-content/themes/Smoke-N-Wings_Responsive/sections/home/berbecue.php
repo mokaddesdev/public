@@ -1,32 +1,33 @@
-<section class="relative w-[1440px] mx-auto">
   <?php 
      $best_bbq_title = get_theme_mod('best_bbq_gallery_heading_title', 'Smokin’ Highlights: The <span class="text-[#F65600]"> best bbq </span>in action');
  
   ?>
-    <!-- Background huge text layer -->
-    <div class="absolute right-10 top-0 z-10 opacity-100">
-        <?php get_template_part("svg/berbecue_svg"); ?>
 
+
+<section class="relative w-full pt-9 lg:pt-[50px] px-[2.5%] md:px-[3.5%] lg:px-[7.5%] xl:px-[8.68%] mx-auto">
+    <!-- Background huge text layer -->
+    <div class="absolute left-1/2 transition -translate-x-1/2 md:translate-x-0 md:left-auto md:right-10 top-5 lg:top-0 z-10 opacity-100">
+        <?php get_template_part("svg/berbecue_svg"); ?>
     </div>
 
     <!-- Foreground content layer -->
-    <div class="relative z-20 px-[125px] pt-[50px] w-full flex flex-col gap-6">
+    <div class="relative z-20 max-w-[1300px] mx-auto w-full flex flex-col gap-6">
         <!-- side right side button text -->
-        <div class="relative w-full flex justify-between">
+        <div class="relative w-full flex items-center md:items-end justify-between">
             <!-- left -->
-            <div class="about-left w-[626px] flex flex-col pt-[22px] items-start gap-5">
-                <h2 class="text-[#16396F]  font-bebas-pro text-[78px] font-bold leading-[81px] tracking-[1.56px] uppercase">
+            <div class="about-left w-2/3 xl:w-1/2 flex flex-col pt-[22px] items-start gap-5">
+                <h2 class="home-heading">
                     <?php echo wp_kses_post(nl2br($best_bbq_title));?>
                 </h2>
             </div>
             <!-- right -->
-            <div class="button flex gap-2.5 items-center pt-24 justify-center">
-                <button id="best-bbq-prev" class="w-[53px] h-[53px] flex-shrink-0 p-[17px] rounded-none bg-[#F8B895] flex items-center justify-center">
+            <div class="button w-1/3 flex gap-2.5 items-center pt-24 justify-center">
+                <button id="best-bbq-prev" class="w-[44px] h-[44px] xl:w-[53px] xl:h-[53px] flex-shrink-0 p-[17px] rounded-none bg-[#F8B895] flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" viewBox="0 0 14 23" fill="none">
                         <path d="M12 1.5L3 11.5L12 21.5" stroke="white" stroke-width="3" />
                     </svg>
                 </button>
-                <button id="best-bbq-next" class="w-[53px] h-[53px] flex-shrink-0 p-[17px] rounded-none bg-[#591419] flex items-center justify-center">
+                <button id="best-bbq-next" class="w-[44px] h-[44px] xl:w-[53px] xl:h-[53px] flex-shrink-0 p-[17px] rounded-none bg-[#591419] flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" viewBox="0 0 14 23" fill="none">
                         <path d="M2 21.5L11 11.5L2 1.5" stroke="white" stroke-width="3" />
                     </svg>
