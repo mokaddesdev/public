@@ -5,7 +5,7 @@ $hero_button_text_left = get_theme_mod('hero_button_text_left', 'Enter competiti
 $hero_button_text_right = get_theme_mod('hero_button_text_right', 'Check Out The Rules');
 ?>
 
-<section class="relative w-full h-[270px] sm:h-[330px] md:h-[400px] lg:h-[480px] xl:h-[560px] 2xl:max-h-[621px] overflow-hidden">
+<section class="relative w-full h-[270px] bg-white dark:bg-white sm:h-[330px] md:h-[400px] lg:h-[480px] xl:h-[560px] 2xl:max-h-[621px] overflow-hidden">
 
   <!-- Background color layer -->
   <div class="absolute inset-0 bg-[#F8B895] opacity-[0.73] z-0"></div>

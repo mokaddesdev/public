@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;" <?php language_attributes(); ?> class="no-js">
+<html style="scroll-behavior: smooth;" <?php language_attributes(); ?> class="no-js dark">
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -7,12 +7,11 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> class="m-0 p-0 bg-[#FFFFFF]">
+<body <?php body_class("bg-white m-0 p-0 dark:bg-[#1f1f1f] bg-[#FFFFFF] transition-all duration-500"); ?> >
 
-<header class="w-full px-[2.5%] md:px-[3%] lg:px-[4.5%] 2xl:px-[6.944%] mx-auto <?php echo is_front_page() ? 'py-0' : 'py-1'; ?>">
+<header id="main-header" class="w-full transition-all duration-500 ease-in-out opacity-100 bg-transparent px-[2.5%] md:px-[3%] lg:px-[4.5%] 2xl:px-[6.944%] mx-auto <?php echo is_front_page() ? 'py-0' : 'py-1'; ?>">
 <!-- header-container -->
 <div class="header-container mx-auto max-w-[1300px] flex items-center justify-between relative">
-
     <!-- logo -->
     <div class="logo w-[160px] h-[75px] sm:w-[150px] sm:h-[75px] md:w-[140px] md:h-[70px] lg:w-[210px] lg:h-[105px]">
         <a href="<?php echo home_url(); ?>" class="text-white hover:underline">
@@ -33,12 +32,14 @@
         wp_nav_menu([
             'theme_location' => 'smokeWings_header_menu',
             'container'      => false,
-            'menu_class'     => 'pt-1.5 flex items-center gap-[9px] lg:gap-3.5 xl:gap-[31px] text-black menu-text',
+            'menu_class'     => 'pt-1.5 flex items-center gap-[9px] lg:gap-3.5 xl:gap-[31px] text-black dark:text-white menu-text',
             'fallback_cb'    => false,
         ]);
         ?>
     </nav>
-
+      <button id="theme-toggle"
+      class="px-3 py-3 rounded-full bg-gray-800 text-white dark:bg-[#e65314] dark:text-white transition-all duration-300"
+    > </button>
      <!-- desktop button -->
     <div class="button pr-3.5 hidden md:block">
         <a href="<?php echo esc_url( get_permalink( get_page_by_path('enter') ) ); ?>" 
@@ -59,7 +60,7 @@
     </div>
 
     <!-- mobile menu -->
-    <nav id="navPhone" class="fixed top-0 right-0 h-full px-[7.5%] bg-white shadow-lg transform translate-x-full transition-transform duration-500 ease-in-out z-40 flex flex-col p-4 gap-6">
+    <nav id="navPhone" class="fixed top-0 right-0 h-full px-[7.5%] bg-white dark:bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-500 ease-in-out z-40 flex flex-col p-4 gap-6">
         <div id="menuClose" class="self-end cursor-pointer">
             <?php get_template_part('svg/close_icon'); ?>
         </div>
@@ -68,7 +69,7 @@
         wp_nav_menu([
             'theme_location' => 'smokeWings_header_menu',
             'container'      => false,
-            'menu_class'     => 'menu-text text-black flex flex-col items-start gap-3',
+            'menu_class'     => 'menu-text text-black dark:text-white flex flex-col items-start gap-3',
             'fallback_cb'    => false,
         ]);
         ?>
