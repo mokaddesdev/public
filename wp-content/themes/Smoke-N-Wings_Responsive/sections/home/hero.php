@@ -28,7 +28,7 @@ $hero_button_text_right = get_theme_mod('hero_button_text_right', 'Check Out The
           $enter_page = get_page_by_path('enter');
           $enter_link = $enter_page ? get_permalink($enter_page) : '#';
           echo esc_url($enter_link);
-      ?>" class="absolute left-0 top-[78%] sm:top-[80%] md:top-[43%] w-[43%] md:w-[35.7%] text-center z-10">
+      ?>" class="absolute -left-1.5 top-[78%] sm:top-[80%] md:top-[43%] w-[43%] md:w-[35.7%] text-center z-10">
 
           <div class="relative w-full h-[70px] md:h-[88px]">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 88" fill="none" class="w-full h-full">
@@ -42,7 +42,7 @@ $hero_button_text_right = get_theme_mod('hero_button_text_right', 'Check Out The
 
       <!-- Right button -->
       <a href="<?php echo esc_url(get_permalink(get_page_by_path('rules'))); ?>" 
-         class="absolute right-0 top-[78%] sm:top-[80%] md:top-[43%] w-[45%] md:w-[35.7%] text-center z-10">
+         class="absolute -right-1.5 top-[78%] sm:top-[80%] md:top-[43%] w-[45%] md:w-[35.7%] text-center z-10">
 
           <div class="relative w-full h-[70px] md:h-[88px] ml-auto">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 88" fill="none" class="w-full h-full">

@@ -71,7 +71,7 @@ include_once get_template_directory() . '/inc/CPT/competition_rule.php';
 
 require get_template_directory() . '/inc/cookie.php';
 
-get_template_part('inc/preloader');
+// get_template_part('inc/preloader');
 
 
 
