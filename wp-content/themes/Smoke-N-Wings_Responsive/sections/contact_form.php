@@ -1,15 +1,15 @@
 <section class="relative w-full pt-18 px-[2.5%] md:px-[3.5%] lg:px-[7.5%] xl:px-[8.68%] xl:pt-[108px] xl:pb-[35px] mx-auto py-5">
 
-     <!-- Background huge text layer -->
-   <div class="absolute top-6 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 transition z-10 opacity-100">
+
+  <!-- Foreground content layer -->
+  <div class="relative z-20 w-full max-w-[1300px] mx-auto">
+
+      <!-- Background huge text layer -->
+   <div class="absolute -top-14 lg:-top-16 2xl:-top-20 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 transition z-10 opacity-100">
     <?php get_template_part("svg/berbecue_svg"); ?>
 </div>
 
-
-  <!-- Foreground content layer -->
-  <div class="relative z-20 w-full">
-
- <div class="flex flex-col gap-3 md:flex-row md:gap-[10px] max-w-[1300px] mx-auto">
+ <div class="flex flex-col gap-3 md:flex-row md:gap-[10px]">
 
       <!-- Left side -->
       <div class="relative w-full md:w-[51.5%] -mt-4 flex flex-col gap-3 text-center md:text-left">

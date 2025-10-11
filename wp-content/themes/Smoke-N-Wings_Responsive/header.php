@@ -9,7 +9,7 @@
 
 <body <?php body_class("bg-white m-0 p-0 dark:bg-[#1f1f1f] bg-[#FFFFFF] transition-all duration-500"); ?> >
 
-<header id="main-header" class="w-full transition-all duration-500 ease-in-out opacity-100 bg-transparent px-[2.5%] md:px-[3%] lg:px-[4.5%] 2xl:px-[6.944%] mx-auto <?php echo is_front_page() ? 'py-0' : 'py-1'; ?>">
+<header id="main-header" class="w-full transition-all duration-500 ease-in-out opacity-100 bg-transparent px-[2.5%] md:px-[3%] lg:px-[4.5%] 2xl:px-[6.944%] <?php echo is_front_page() ? 'py-0' : 'py-1'; ?>">
 <!-- header-container -->
 <div class="header-container mx-auto max-w-[1300px] flex items-center justify-between relative">
     <!-- logo -->

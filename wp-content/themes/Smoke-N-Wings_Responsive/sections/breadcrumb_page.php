@@ -5,7 +5,7 @@ Template Name: Tailwind Breadcrumb Page
 get_header(); 
 ?>
 
-<section class="relative w-full h-[100px] md:h-[220px] mt-1 sm:mt-2 md:mt-3 flex items-center justify-center bg-[#591419] flex-shrink-0 overflow-hidden">
+<section class="relative max-w-[1440px] mx-auto w-full h-[100px] md:h-[220px] mt-1 sm:mt-2 md:mt-3 flex items-center justify-center bg-[#591419] flex-shrink-0 overflow-hidden">
     
     <!-- SVG Background -->
     <svg class="absolute top-0 right-0 w-36 max-w-80 h-auto z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322 220" fill="none">

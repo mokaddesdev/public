@@ -5,7 +5,7 @@
         ?>
 
 
-<footer class="w-full mx-auto pt-6 md:pt-8 lg:pt-10 2xl:pt-14 pb-3 sm:pt-5 sm:pb-4 lg:pb-6  2xl:pb-8  px-[2.5%] md:px-[3.5%] lg:px-[7.5%] xl:px-[8.68%] mt-3 sm:mt-5 md:mt-7 lg:mt-10 2xl:mt-[92px] bg-[#16396F]">
+<footer class="w-full max-w-[1440px] mx-auto pt-6 md:pt-8 lg:pt-10 2xl:pt-14 pb-3 sm:pt-5 sm:pb-4 lg:pb-6  2xl:pb-8  px-[2.5%] md:px-[3.5%] lg:px-[7.5%] xl:px-[8.68%] mt-3 sm:mt-5 md:mt-7 lg:mt-10 2xl:mt-[92px] bg-[#16396F]">
 
     <!-- footer-content -->
     <div class="footer-content mx-auto max-w-[1300px] flex flex-col md:flex-row items-center justify-start md:justify-between">
