@@ -25,7 +25,7 @@
     <div class="relative z-20 content px-[5%] sm:px-[7%] md:px-[4%] lg:px-[5%] xl:pl-[6.5%] py-10 sm:py-14 md:py-16 lg:py-20 flex flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-[54px] max-w-[1330px] mx-auto">
 
         <!-- left card -->
-        <div class="left w-full lg:w-[49.2%]">
+        <div class="left w-full lg:w-[60%] xl:w-[49.2%]">
             <div class="w-full h-auto lg:h-[727.523px] pt-6 sm:pt-8 lg:pt-[37.86px] pl-5 sm:pl-6 lg:pl-[39.50px] bg-white shadow-[ -12px_49px_94px_0_rgba(85,89,90,0.05) ] rounded-lg flex flex-col items-center justify-center mx-auto">
                 <h2 class="text-[#01112D] font-bebas text-[28px] sm:text-[34px] md:text-[36px] lg:text-[38px] leading-[1.2]">
                     <?php echo esc_html($title); ?>
@@ -41,8 +41,8 @@
         </div>
 
         <!-- right text and button -->
-        <div class="right-text-button flex w-full lg:w-[50.8%] flex-col gap-5 justify-center pt-10 sm:pt-14 md:pt-20 lg:pt-[175px]">
-            <h3 class="font-bebas text-white w-full sm:w-[90%] lg:w-[580px] text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[1.2] tracking-[0.8px]">
+        <div class="right-text-button flex w-full lg:w-[40%] xl:w-[50.8%] flex-col gap-5 justify-center pt-10 sm:pt-14 md:pt-20 lg:pt-[175px] text-center lg:text-left max-w-[70%] lg:max-w-[100%] mx-auto pr-3">
+            <h3 class="font-bebas text-white w-full sm:w-[90%] lg:w-full text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[1.2] tracking-[0.8px]">
                 <?php echo esc_html($right_title); ?>
             </h3>
 
@@ -50,7 +50,7 @@
                 <?php echo wp_kses_post($right_desc); ?>
             </p>
 
-            <div class="button pt-2 sm:pt-3">
+            <div class="button pt-2 sm:pt-3 max-w-[50%] lg:max-w-full mx-auto lg:w-full">
                 <a href="<?php echo esc_url($enter_link); ?>" class="red-btn inline-block">
                     <span><?php echo esc_html($btn_txt); ?></span>
                 </a>
