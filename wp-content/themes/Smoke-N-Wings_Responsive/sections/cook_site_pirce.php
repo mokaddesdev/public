@@ -1,7 +1,7 @@
 
 <section class=" pt-8 xl:pt-[46.60px] mb-0.5 pb-6 w-full px-[2.5%] md:px-[3.5%] lg:px-[7.5%] 2xl:px-[8.68%]">
 
-  <div class="container max-w-[1300px] flex flex-col gap-6 md:gap-7 xl:gap-[49px]">
+  <div class="container mx-auto max-w-[1300px] flex flex-col gap-6 md:gap-7 xl:gap-[49px]">
 
     <?php
     /**

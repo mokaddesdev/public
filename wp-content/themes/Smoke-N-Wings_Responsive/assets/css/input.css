@@ -63,6 +63,7 @@ ul, li {
     @apply text-[#16396F] max-w-[550px] font-bebas-pro text-[48px] sm:text-[58px] md:text-[65px] lg:text-[66px] 2xl:text-[78px] font-bold leading-12 sm:leading-14 md:leading-16 lg:leading-20 xl:leading-[81px] tracking-[1.56px] uppercase;
 }
 
+
 .image-left-svg{
      @apply absolute z-10 w-[340px] h-[263px] sm:w-[490px] sm:h-[380px] md:w-[540px] md:h-[440px] lg:w-[470px] lg:h-[400px] xl:w-[520px] xl:h-[445px] 2xl:w-[590px] 2xl:h-[495px] bg-[#591419] dark:top-0 top-0 md:top-1.5 lg:top-2.5 xl:top-[9px] 2xl:top-3 left-1/2 lg:left-auto lg:right-7 2xl:right-3 -translate-x-1/2 lg:translate-x-0 sm:right-auto transition-all duration-300
 }
@@ -72,6 +73,18 @@ ul, li {
          sm:w-[500px] sm:h-[380px] md:w-[550px] md:h-[450px] 
          lg:w-[480px] lg:h-[410px] xl:w-[560px] xl:h-[460px] 
          2xl:w-[618px] 2xl:h-[515px] mx-auto md:mx-0 overflow-hidden
+}
+
+
+.scholar-image-left-svg{
+     @apply absolute z-10 w-[340px] h-[263px] sm:w-[490px] sm:h-[380px] md:w-[540px] md:h-[440px] lg:w-[480px] lg:h-[410px] xl:w-[530px] xl:h-[460px] 2xl:w-[580px] 2xl:h-[480px] bg-[#591419] dark:top-0 top-0 md:top-1.5 lg:top-2.5 xl:top-[9px] 2xl:top-3 left-1/2 lg:left-auto lg:right-7 2xl:right-3 -translate-x-1/2 lg:translate-x-0 sm:right-auto transition-all duration-300
+}
+
+.scholar-image-right{
+    @apply relative z-20 w-[350px] h-[280px] 
+         sm:w-[500px] sm:h-[380px] md:w-[550px] md:h-[450px] 
+         lg:w-[540px] lg:h-[440px] xl:w-[575px] xl:h-[475px] 
+         2xl:w-[605px] 2xl:h-[495px] mx-auto md:mx-0 overflow-hidden
 }
 /* ==========================
  Reset Button design
@@ -149,8 +162,6 @@ ul, li {
 }
 
 
-
-
 /* =======
  Entry Form Desing 
  ========*/
@@ -201,7 +212,7 @@ input.wpcf7-form-control.wpcf7-tel.wpcf7-validates-as-required.wpcf7-text.wpcf7-
 }
 
 .kcbs-member, .kcbs-phone{
-    @apply w-full md:w-1/2;
+    @apply w-full lg:w-1/2;
 }
 #kcbs-member-type-select{
     @apply w-[100%];
@@ -251,7 +262,7 @@ input.wpcf7-form-control.wpcf7-text.kcbs-number-input{
 
 /* Wrapper for the checkboxes */
 .read-checkbox-rule-input .wpcf7-form-control {
-  @apply flex items-center justify-start gap-3 flex-wrap;
+  @apply flex md:flex-row flex-col items-center justify-start gap-3;
 }
 
 /* Individual checkbox items */
@@ -263,12 +274,12 @@ input.wpcf7-form-control.wpcf7-text.kcbs-number-input{
 
 
 .serve-food-help{
-     @apply mt-6 py-1.5 overflow-hidden w-full flex flex-col items-start gap-2 2xl:gap-[15px] bg-[#FFF4EE];
+     @apply mt-6 px-3 py-1.5 overflow-hidden w-full flex flex-col items-start gap-2 2xl:gap-[15px] bg-[#FFF4EE];
 }
 
 .team-help-kid-prepare-label, 
 .serve-food-help-label{
-   @apply text-[#16396F] font-jost text-[16px] not-italic font-semibold leading-normal tracking-[0.32px] uppercase;
+   @apply text-[#16396F] font-jost text-[12px] sm:text-[14px] md:text-[16px] not-italic font-semibold leading-normal tracking-[0.32px] uppercase;
 }
 
 .team-help-kid-prepare {
@@ -277,12 +288,12 @@ input.wpcf7-form-control.wpcf7-text.kcbs-number-input{
 
 .serve-food-help-input span.wpcf7-list-item.first,
 .team-help-kid-prepare span.wpcf7-list-item.first{
-    @apply ml-1 p-[8px_12px] border-[rgba(246,86,0,0.1)] w-[105%] text-black bg-white font-jost text-[12px] font-semibold leading-normal tracking-[0.24px];
+    @apply ml-1 p-[8px_12px] border-[rgba(246,86,0,0.1)] w-[98%] text-black bg-white font-jost text-[14px] font-semibold leading-normal tracking-[0.24px];
 }
 
 .team-help-kid-prepare span.wpcf7-list-item.last,
 .serve-food-help-input span.wpcf7-list-item.last{
-         @apply ml-1 flex w-[95%] p-[8px_12px] border border-[rgba(246,86,0,0.1)] text-black bg-white font-jost text-[12px] font-semibold leading-normal tracking-[0.24px];
+         @apply ml-1 flex w-[98%] xl:min-w-[380px] p-[8px_12px] border border-[rgba(246,86,0,0.1)] text-black bg-white font-jost text-[14px] font-semibold leading-normal tracking-[0.24px];
 }
 
 span.wpcf7-list-item-label{
@@ -296,7 +307,7 @@ input#acceptance-rule-text{
 }
 
 .acceptance-rule-text{
-               @apply text-black w-full md:w-[450px] font-jost text-[14px] font-semibold leading-normal tracking-[0.24px] not-italic ;
+               @apply text-black w-full md:w-[98%] font-jost text-[14px] font-semibold leading-normal tracking-[0.24px] not-italic ;
 }
 
 .entry-form{
