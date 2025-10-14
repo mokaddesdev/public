@@ -23,7 +23,7 @@
         </h2>
 
         <!-- description -->
-        <p class="text-black font-jost pt-0.5 text-[16px] sm:text-[17px] md:text-[18px] font-normal leading-normal tracking-[0.36px]">
+        <p class="text-black dark:text-white font-jost pt-0.5 text-[16px] sm:text-[17px] md:text-[18px] font-normal leading-normal tracking-[0.36px]">
           <?php
             $description = get_theme_mod('contact_form_description');
             echo !empty($description)
@@ -37,7 +37,7 @@
       </div>
 
       <!-- Right side form -->
-      <div class="w-full md:w-[48.5%] bg-white z-20 shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] px-[20px] sm:px-[30px] md:px-[40px] py-6 md:py-3 mt-10 md:mt-0">
+      <div class="w-full md:w-[48.5%] dark:bg-gray-400 bg-white z-20 shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] px-[20px] sm:px-[30px] md:pl-[40px] py-6 md:py-3 mt-10 md:mt-0">
         <h2 class="text-[#16396F] font-bebas text-[28px] sm:text-[34px] md:text-[38px] font-normal leading-[60px] md:leading-[81px] tracking-[0.76px] uppercase text-center md:text-left">
           <?php
             $right_title = get_theme_mod('contact_form_right_title');

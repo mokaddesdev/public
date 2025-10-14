@@ -17,7 +17,7 @@
 
           foreach ($contact_boxes as $box) :
           ?>
-            <div class="w-full pl-2.5 pr-0.5 xl:pl-4 xl:pr-1 xl:w-[469px] h-auto lg:h-[70px] xl:h-[99px] flex-shrink-0 bg-[#FFF4EE] flex items-center justify-between text-center md:text-left">
+            <div class="w-full pl-2.5 pr-0.5 xl:pl-4 xl:pr-1 xl:w-[469px] h-auto lg:h-[70px] xl:h-[99px] flex-shrink-0 bg-[#FFF4EE] dark:bg-gray-400 flex items-center justify-between text-center md:text-left">
 
               <div class="w-[44px] h-[44px] sm:w-[48px] sm:h-[48px] md:w-[54px] md:h-[54px] lg:w-[58px] lg:h-[58px] xl:h-[74px] xl:w-[74px] bg-[#16396F] flex items-center justify-center">
                 <?php get_template_part($box['icon']); ?>

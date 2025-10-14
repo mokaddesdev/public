@@ -22,7 +22,7 @@
         <h2 class="body-heading text-center md:text-start">
           <?php echo wp_kses_post($title); ?>
         </h2>
-        <p class="body-text text-center md:text-start">
+        <p class="body-text text-center md:text-start dark:text-red-500">
           <?php echo wp_kses_post($desc); ?>
         </p>
 
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Right form -->
-    <div class="relative z-30 w-full md:w-1/2 flex flex-col items-center md:items-start bg-white pt-6 md:pt-4 px-4 sm:px-6 xl:px-[40px] mx-auto shadow-[0_10px_60px_rgba(0,0,0,0.05)] rounded-lg">
+    <div class="relative z-30 w-full md:w-1/2 flex flex-col items-center md:items-start bg-white dark:bg-gray-400 pt-6 md:pt-4 px-4 sm:px-6 xl:px-[40px] mx-auto shadow-[0_10px_60px_rgba(0,0,0,0.05)] rounded-lg">
 
       <h2 class="text-[#16396F] text-center font-bebas text-[28px] w-full sm:text-[34px] md:text-[38px] xl:text-[40px] leading-[45px] sm:leading-[60px] md:leading-[70px] 2xl:leading-[80px] uppercase tracking-[0.76px]">
         <?php echo wp_kses_post($form); ?>

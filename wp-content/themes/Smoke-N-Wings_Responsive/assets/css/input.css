@@ -396,51 +396,42 @@ textarea#child-message {
 
 
 
-/* Contact Form */
+
+
+/* === Contact Form Design with Percentage Widths === */
+
+/* Input Row Layout */
 .first_name-email {
-  @apply flex flex-col sm:flex-row md:flex-col lg:flex-row gap-[20px] sm:gap-[29px] mt-3 mb-5;
+  @apply flex flex-col sm:flex-row md:flex-col lg:flex-row gap-[3%] mt-3 mb-5;
 }
 
+/* First Name & Email Inputs */
 input#first-name-input,
 input#contact-email {
-  @apply w-full sm:w-[240.60px] text-[#7C7C7C] font-jost text-[16px] px-3.5 py-[14px] mt-0.5 outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] dark:text-black w-full lg:w-[100%] font-jost text-[16px] font-normal leading-[24px]
+  px-[3%] pt-[3%] pb-[2%] mt-1 outline-none border dark:border-white border-[#CCCCCC] rounded-md
+  focus:border-[#F65600] transition-all duration-200;
 }
 
+/* Subject Input */
 input#contact-subject {
-  @apply w-full sm:w-[512px] text-[#7C7C7C] font-jost text-[16px] px-3.5 py-[12px] mt-1.5 mb-5 outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] dark:text-black w-full font-jost text-[16px] font-normal leading-[24px]
+  px-[3%] py-[2.5%] mt-2 mb-5 outline-none border border-[#CCCCCC] dark:border-white rounded-md
+  focus:border-[#F65600] transition-all duration-200;
 }
 
+/* Message Textarea */
 textarea#contact-message {
-  @apply w-full sm:w-[512px] h-[128px] text-[#7C7C7C] font-jost text-[16px] px-3.5 py-[10px] outline-none border border-[#CCCCCC];
+  @apply text-[#7C7C7C] dark:text-black  w-full h-[25vh] font-jost text-[16px] font-normal leading-[24px]
+  px-[3%] py-[2%] outline-none border border-[#CCCCCC] dark:border-white rounded-md focus:border-[#F65600] transition-all duration-200 resize-none;
 }
 
+/* Submit Button */
 input#contact-form {
-  @apply w-full sm:w-[302px] md:w-[360px] lg:w-[512px] mt-8 h-[48px] bg-[#F65600] text-white font-bebas text-[18px] sm:text-[20px] uppercase;
-}
-
-
-
-
-/* contact form design */
-.first_name-email {
-  @apply flex flex-col sm:flex-row md:flex-col lg:flex-row gap-[20px] sm:gap-[29px] mt-3 mb-5;
-}
-
-input#first-name-input,
-input#contact-email {
-  @apply text-[#7C7C7C] w-full xl:w-[240.60px] font-jost text-[16px] font-normal leading-[24px] px-3.5 pt-[14px] pb-2 mt-0.5 outline-none border border-[#CCCCCC];
-}
-
-input#contact-subject {
-  @apply text-[#7C7C7C] w-full xl:w-[512px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[12px] mt-1.5 mb-5 outline-none border border-[#CCCCCC];
-}
-
-textarea#contact-message {
-  @apply text-[#7C7C7C] w-full xl:w-[512px] h-[128px] font-jost text-[16px] font-normal leading-[24px] px-3.5 py-[10px] outline-none border border-[#CCCCCC];
-}
- /* button  */
-input#contact-form {
-  @apply inline-block w-full sm:w-[302px]  md:w-[280px] lg:w-[360px] xl:w-[512px] mt-8 h-[48px] bg-[#F65600] text-white font-bebas text-[20px] font-normal leading-normal tracking-[0.4px] uppercase py-[6px];
+  @apply inline-block w-full sm:w-[100%]
+  mt-8 h-[48px] bg-[#F65600] hover:bg-[#e34d00] text-white font-bebas text-[20px]
+  font-normal leading-normal tracking-[0.4px] uppercase py-[6px] rounded-md
+  transition-all duration-200;
 }
 
 
