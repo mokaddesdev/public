@@ -1,6 +1,15 @@
-<?php get_header();?>
+<?php
+/**
+ * Contact us page
+ * 
+ * @package smokewings
+ */
 
-<?php get_template_part('sections/breadcrumb_page'); ?>
-<?php get_template_part('sections/contact_form'); ?>
+defined( 'ABSPATH' ) || exit;
 
-<?php get_footer();?>
+get_header();
+
+get_template_part('template-parts/breadcrumb_section');
+get_template_part('template-parts/contact_form');
+
+get_footer();

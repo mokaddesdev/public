@@ -1,13 +1,16 @@
 <?php
 /**
  * Competition Rules Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_competition_rules_customizer($wp_customize) {
+function smokewings_competition_rules_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('competition_rules_section', array(
-        'title'    => __('Competition Rules Settings', 'smokeWings'),
+        'title'    => __('Competition Rules Settings', 'smokewings'),
         'priority' => 132,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -17,7 +20,7 @@ function smokeWings_competition_rules_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_rules_title', array(
-        'label'   => __('Competition Rules Title', 'smokeWings'),
+        'label'   => __('Competition Rules Title', 'smokewings'),
         'section' => 'competition_rules_section',
         'type'    => 'textarea',
     ));
@@ -29,7 +32,7 @@ function smokeWings_competition_rules_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_rules_description', array(
-        'label'   => __('Competition Rules Description', 'smokeWings'),
+        'label'   => __('Competition Rules Description', 'smokewings'),
         'section' => 'competition_rules_section',
         'type'    => 'textarea',
     ));
@@ -42,10 +45,10 @@ function smokeWings_competition_rules_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('rules_card_description', array(
-        'label'   => __('Rules Card Description description', 'smokeWings'),
+        'label'   => __('Rules Card Description description', 'smokewings'),
         'section' => 'competition_rules_section',
         'type'    => 'textarea',
     ));
 
 }
-add_action('customize_register', 'smokeWings_competition_rules_customizer');
+add_action('customize_register', 'smokewings_competition_rules_customizer');

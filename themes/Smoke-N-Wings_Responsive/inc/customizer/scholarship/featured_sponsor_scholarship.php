@@ -1,14 +1,17 @@
 <?php
 /**
  * Featured Sponsor Scholarship customize
+ * 
+ * @package smokewings
  */
 
-function smokeWings_featured_sponsor_customizer($wp_customize) {
+function smokewings_featured_sponsor_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('featured_sponsor_scholarship_section', array(
-        'title'    => __('Featured Sponsor Scholarship Settings', 'smokeWings'),
+        'title'    => __('Featured Sponsor Scholarship Settings', 'smokewings'),
         'priority' => 146,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -18,7 +21,7 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('featured_sponsor_title', array(
-        'label'   => __('Featured Sponsor Title', 'smokeWings'),
+        'label'   => __('Featured Sponsor Title', 'smokewings'),
         'section' => 'featured_sponsor_scholarship_section',
         'type'    => 'textarea',
     ));
@@ -30,7 +33,7 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('featured_sponsor_description', array(
-        'label'   => __('Featured Sponsor Description', 'smokeWings'),
+        'label'   => __('Featured Sponsor Description', 'smokewings'),
         'section' => 'featured_sponsor_scholarship_section',
         'type'    => 'textarea',
     ));
@@ -42,7 +45,7 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('featured_sponsor_button_text', array(
-        'label'   => __('Featured Sponsor Button Text', 'smokeWings'),
+        'label'   => __('Featured Sponsor Button Text', 'smokewings'),
         'section' => 'featured_sponsor_scholarship_section',
         'type'    => 'text',
     ));
@@ -54,14 +57,14 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('featured_sponsor_banner_text', array(
-        'label'   => __('Featured Sponsor Banner Text', 'smokeWings'),
+        'label'   => __('Featured Sponsor Banner Text', 'smokewings'),
         'section' => 'featured_sponsor_scholarship_section',
         'type'    => 'textarea',
     ));
 
     // Image
     $wp_customize->add_setting('featured_sponsor_image', array(
-        'default' => get_template_directory_uri() . '/assets/images/scholar.png',
+        'default' => THEME_DIR_URI . '/assets/images/scholar.png',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
@@ -69,10 +72,10 @@ function smokeWings_featured_sponsor_customizer($wp_customize) {
         $wp_customize,
         'featured_sponsor_image_control',
         array(
-            'label'    => __('Featured Sponsor Image', 'smokeWings'),
+            'label'    => __('Featured Sponsor Image', 'smokewings'),
             'section'  => 'featured_sponsor_scholarship_section',
             'settings' => 'featured_sponsor_image',
         )
     ));
 }
-add_action('customize_register', 'smokeWings_featured_sponsor_customizer');
+add_action('customize_register', 'smokewings_featured_sponsor_customizer');

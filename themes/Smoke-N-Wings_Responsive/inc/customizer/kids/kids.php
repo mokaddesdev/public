@@ -1,27 +1,43 @@
 <?php
-function smokeWings_kids_section_heading_only($customizer) {
+/**
+ * Kids customizer
+ * 
+ * @package smokewings
+ */
 
-   // Section
-    $customizer->add_section('kids_page_customizer', array(
-        'title'    => __('⭐ Kids Page Start ⭐', 'smokeWings'),
-        'priority' => 139,
-    ));
+function smokewings_kids_section_heading_only( $customizer ) {
 
-    // শুধু heading দেখানোর জন্য setting
-    $customizer->add_setting('kids_page_heading', array(
-        'sanitize_callback' => 'esc_html',
-    ));
+    // Section
+    $customizer->add_section(
+        'kids_page_customizer',
+        array(
+            'title'       => __( 'Kids Page Start', 'smokewings' ),
+            'priority'    => 139,
+            'capability'  => 'edit_theme_options',
+        )
+    );
 
-    // Custom heading control
-    $customizer->add_control(new WP_Customize_Control(
-        $customizer,
+    // Setting
+    $customizer->add_setting(
         'kids_page_heading',
         array(
-            'label'       => __('⭐ Kids Page Start ⭐', 'smokeWings'),
-            'section'     => 'kids_page_customizer',
-            'type'        => 'hidden',
+            'default'           => 'Kids Page',
+            'sanitize_callback' => 'sanitize_text_field',
         )
-    ));
+    );
 
+    // Control
+    $customizer->add_control(
+        new WP_Customize_Control(
+            $customizer,
+            'kids_page_heading',
+            array(
+                'label'   => __( 'Kids Page Heading', 'smokewings' ),
+                'section' => 'kids_page_customizer',
+                'type'    => 'hidden',
+            )
+        )
+    );
 }
-add_action('customize_register', 'smokeWings_kids_section_heading_only');
+
+add_action( 'customize_register', 'smokewings_kids_section_heading_only' );

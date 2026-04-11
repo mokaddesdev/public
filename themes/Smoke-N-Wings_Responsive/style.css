@@ -1,11 +1,20 @@
 /*
-
-Theme Name: Smoke-N-Wings Responsive
-Theme URI: https://mokaddesali.com/smoke_N_Wings
+Theme Name: Smoke-N-Wings BBQ Competition Theme
+Theme URI: https://mokaddesali.com/smoke-n-wings
 Author: Mokaddes Ali
 Author URI: https://mokaddesali.com
-Description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla minus exercitationem perspiciatis. Ut repellat alias nobis, provident, placeat eveniet dolore itaque quos, magnam dignissimos numquam repudiandae sapiente doloribus recusandae ipsum ab! Laborum reprehenderit beatae, culpa maxime saepe consectetur nemo modi repellat quae voluptatum quis neque necessitatibus est, eum reiciendis natus!
+Description: Smoke-N-Wings is a modern, fully responsive WordPress theme built specifically for BBQ competition events, kids BBQ contests, cooking tournaments, and food festival websites. It includes dynamic sections for event details, competition schedules, registration forms, galleries, FAQs, and contact pages. Optimized for performance, SEO, accessibility, and mobile-first design using Tailwind CSS and WordPress best practices.
 
 Version: 1.0.0
-Text Domain: smokeWings
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain: smokewings
+Domain Path: /languages
+
+Tags: bbq, competition, event, food, responsive, tailwindcss, customizer, kids-event, festival, one-column, two-columns, custom-background, custom-logo, featured-images, translation-ready
 */

@@ -1,13 +1,16 @@
 <?php
 /**
  * Competition Awareness Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_competition_awareness_customizer($wp_customize) {
+function smokewings_competition_awareness_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('competition_awareness_section', array(
-        'title'    => __('Competition Awareness Settings', 'smokeWings'),
+        'title'    => __('Competition Awareness Settings', 'smokewings'),
         'priority' => 134,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -17,7 +20,7 @@ function smokeWings_competition_awareness_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_awareness_title', array(
-        'label'   => __('Competition Awareness Title', 'smokeWings'),
+        'label'   => __('Competition Awareness Title', 'smokewings'),
         'section' => 'competition_awareness_section',
         'type'    => 'textarea',
     ));
@@ -29,7 +32,7 @@ function smokeWings_competition_awareness_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_awareness_first_description', array(
-        'label'   => __('Competition Awareness First Description', 'smokeWings'),
+        'label'   => __('Competition Awareness First Description', 'smokewings'),
         'section' => 'competition_awareness_section',
         'type'    => 'textarea',
     ));
@@ -41,14 +44,14 @@ function smokeWings_competition_awareness_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_awareness_second_description', array(
-        'label'   => __('Competition Awareness Second Description', 'smokeWings'),
+        'label'   => __('Competition Awareness Second Description', 'smokewings'),
         'section' => 'competition_awareness_section',
         'type'    => 'textarea',
     ));
 
     // Image
     $wp_customize->add_setting('competition_awareness_image', array(
-        'default'           => get_template_directory_uri() . '/assets/images/rule2.png',
+        'default'           => THEME_DIR_URI . '/assets/images/rule2.png',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
@@ -56,10 +59,10 @@ function smokeWings_competition_awareness_customizer($wp_customize) {
         $wp_customize,
         'competition_awareness_image_control',
         array(
-            'label'    => __('Competition Awareness Image', 'smokeWings'),
+            'label'    => __('Competition Awareness Image', 'smokewings'),
             'section'  => 'competition_awareness_section',
             'settings' => 'competition_awareness_image',
         )
     ));
 }
-add_action('customize_register', 'smokeWings_competition_awareness_customizer');
+add_action('customize_register', 'smokewings_competition_awareness_customizer');

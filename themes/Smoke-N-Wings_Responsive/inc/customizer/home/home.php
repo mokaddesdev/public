@@ -1,29 +1,40 @@
 <?php
 /**
  * Homepage Customizer Heading
+ * 
+ * @package smokewings
  */
-function smokeWings_homepage_customizer_heading($wp_customize) {
 
-    $wp_customize->add_section('homepage_customizer_section', array(
-        'title'    => __('🏠 Homepage Customize Settings', 'smokeWings'),
-        'priority' => 121,
-    ));
+function smokewings_homepage_customizer_heading( $wp_customize ) {
 
+    // Section
+    $wp_customize->add_section(
+        'homepage_customizer_section',
+        array(
+            'title'       => __( 'Homepage Customize Settings', 'smokewings' ),
+            'priority'    => 121,
+            'capability'  => 'edit_theme_options',
+        )
+    );
 
-    $wp_customize->add_setting('homepage_custom_heading', array(
-        'sanitize_callback' => 'esc_html',
-    ));
-
-
-    $wp_customize->add_control(new WP_Customize_Control(
-        $wp_customize,
+    // Setting
+    $wp_customize->add_setting(
         'homepage_custom_heading',
         array(
-            'label'       => __('⭐ Homepage Custom Heading ⭐', 'smokeWings'),
-            'section'     => 'homepage_customizer_section',
-            'type'        => 'hidden',
+            'default'           => 'Homepage Heading',
+            'sanitize_callback' => 'sanitize_text_field',
         )
-    ));
+    );
 
+    // Control
+    $wp_customize->add_control(
+        'homepage_custom_heading',
+        array(
+            'label'   => __( 'Homepage Custom Heading', 'smokewings' ),
+            'section' => 'homepage_customizer_section',
+            'type'    => 'hidden',
+        )
+    );
 }
-add_action('customize_register', 'smokeWings_homepage_customizer_heading');
+
+add_action( 'customize_register', 'smokewings_homepage_customizer_heading' );

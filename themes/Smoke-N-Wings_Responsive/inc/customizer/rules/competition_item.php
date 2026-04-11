@@ -1,13 +1,16 @@
 <?php
 /**
  * Competition Item Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_competition_item_customizer($wp_customize) {
+function smokewings_competition_item_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('competition_item_section', array(
-        'title'    => __('Competition Item Settings', 'smokeWings'),
+        'title'    => __('Competition Item Settings', 'smokewings'),
         'priority' => 135,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -17,14 +20,14 @@ function smokeWings_competition_item_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_item_title', array(
-        'label'   => __('Competition Item Title', 'smokeWings'),
+        'label'   => __('Competition Item Title', 'smokewings'),
         'section' => 'competition_item_section',
         'type'    => 'textarea',
     ));
 
     // Image
     $wp_customize->add_setting('competition_item_image', array(
-        'default'           => get_template_directory_uri() . '/assets/images/rule3.png',
+        'default'           => THEME_DIR_URI . '/assets/images/rule3.png',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
@@ -32,10 +35,10 @@ function smokeWings_competition_item_customizer($wp_customize) {
         $wp_customize,
         'competition_item_image_control',
         array(
-            'label'    => __('Competition Item Image', 'smokeWings'),
+            'label'    => __('Competition Item Image', 'smokewings'),
             'section'  => 'competition_item_section',
             'settings' => 'competition_item_image',
         )
     ));
 }
-add_action('customize_register', 'smokeWings_competition_item_customizer');
+add_action('customize_register', 'smokewings_competition_item_customizer');

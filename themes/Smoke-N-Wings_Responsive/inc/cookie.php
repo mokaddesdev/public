@@ -1,9 +1,10 @@
 <?php
-
 /**
  * Cookie banner HTML
+ * 
+ * @package smokewings
  */
-function smokeWings_banner_cookie_banner() {
+function smokewings_banner_cookie_banner() {
     if (isset($_COOKIE['cookie_accepted']) && $_COOKIE['cookie_accepted'] == '1') {
         return;
     }
@@ -30,13 +31,13 @@ function smokeWings_banner_cookie_banner() {
     </div>
     <?php
 }
-add_action('wp_footer', 'smokeWings_banner_cookie_banner', 999);
+add_action('wp_footer', 'smokewings_banner_cookie_banner', 999);
 
 
 /**
  * AJAX - server-side cookie
  */
-function smokeWings_set_cookie_ajax() {
+function smokewings_set_cookie_ajax() {
     if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'cookie_nonce')) {
         wp_send_json_error('Invalid nonce');
     }
@@ -49,5 +50,5 @@ function smokeWings_set_cookie_ajax() {
 
     wp_send_json_success('Cookie set successfully');
 }
-add_action('wp_ajax_set_cookie', 'smokeWings_set_cookie_ajax');
-add_action('wp_ajax_nopriv_set_cookie', 'smokeWings_set_cookie_ajax');
+add_action('wp_ajax_set_cookie', 'smokewings_set_cookie_ajax');
+add_action('wp_ajax_nopriv_set_cookie', 'smokewings_set_cookie_ajax');

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-  
+
     /*----- menu icon toggle -----*/
    $("#menuBtn").click(function(){
         $("#navPhone").removeClass("translate-x-full").addClass("translate-x-0");
@@ -118,5 +118,15 @@ const $lightSvg = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="
 
 });
 
+window.addEventListener('load', () => {
+    const loader = document.querySelector(".preloader");
+    if ( loader ) {
+      setTimeout( () => {
+         loader.classList.add("preloader-hidden");
 
-
+    loader.addEventListener('transitionend', () => {
+        loader.remove();
+    } );
+      }, 500 );
+    }
+} );

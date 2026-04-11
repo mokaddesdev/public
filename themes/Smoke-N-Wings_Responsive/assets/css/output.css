@@ -399,6 +399,9 @@
   .z-\[9999\] {
     z-index: 9999;
   }
+  .z-\[20000\] {
+    z-index: 20000;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -676,9 +679,6 @@
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
-  .w-36 {
-    width: calc(var(--spacing) * 36);
-  }
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
@@ -780,9 +780,6 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
-  }
-  .max-w-80 {
-    max-width: calc(var(--spacing) * 80);
   }
   .max-w-\[50\%\] {
     max-width: 50%;
@@ -1148,6 +1145,12 @@
   .to-gray-100 {
     --tw-gradient-to: var(--color-gray-100);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .object-contain {
     object-fit: contain;
@@ -4048,6 +4051,14 @@ ul {
 }
 ul, li {
   list-style-type: none;
+}
+.preloader {
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+}
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 .hero-bg-heading {
   margin-inline: auto;

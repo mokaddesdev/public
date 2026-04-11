@@ -1,13 +1,16 @@
 <?php
 /**
  * Sponsor Page Heading Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_sponsor_page($wp_customize) {
+function smokewings_sponsor_page($wp_customize) {
 
     // Sponsor Section
     $wp_customize->add_section('sponsor_page_customizer', array(
-        'title'    => __('🤝 Sponsor Page Settings', 'smokeWings'),
+        'title'    => __('🤝 Sponsor Page Settings', 'smokewings'),
         'priority' => 137,
+        'capability'  => 'edit_theme_options',
     ));
 
     //  heading 
@@ -19,11 +22,11 @@ function smokeWings_sponsor_page($wp_customize) {
         $wp_customize,
         'sponsor_page_heading',
         array(
-            'label'       => __('⭐ Sponsor Page Heading ⭐', 'smokeWings'),
+            'label'       => __('⭐ Sponsor Page Heading ⭐', 'smokewings'),
             'section'     => 'sponsor_page_customizer',
             'type'        => 'hidden',
         )
     ));
 
 }
-add_action('customize_register', 'smokeWings_sponsor_page');
+add_action('customize_register', 'smokewings_sponsor_page');

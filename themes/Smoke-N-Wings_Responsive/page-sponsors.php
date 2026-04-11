@@ -1,7 +1,15 @@
-<?php get_header();?>
+<?php
+/**
+ * Sponsor Page Template
+ *
+ * @package smokewings
+ */
+defined( 'ABSPATH' ) || exit;
 
-<?php get_template_part('sections/breadcrumb_page'); ?>
-<?php get_template_part('sections/sponsor_gallery'); ?>
+get_header();
 
+get_template_part( 'template-parts/breadcrumb_section' );
 
-<?php get_footer();?>
+get_template_part( 'template-parts/sponsor_gallery' );
+
+get_footer();

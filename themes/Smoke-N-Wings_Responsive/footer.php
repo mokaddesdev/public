@@ -44,7 +44,7 @@
                 <nav>
                     <?php
                     wp_nav_menu(array(
-                        "theme_location" => "smokeWings_footer_menu1",
+                        "theme_location" => "smokewings_footer_menu1",
                         'container' => false,
                         'menu_class' => 'menu-text text-[#FFE4D5] flex flex-col gap-3',
                         'fallback_cb' => false,
@@ -55,7 +55,7 @@
 
                     <?php
                     wp_nav_menu(array(
-                        "theme_location" => "smokeWings_footer_menu2",
+                        "theme_location" => "smokewings_footer_menu2",
                         'container' => false,
                         'menu_class' => 'flex flex-col gap-3 menu-text text-[#FFE4D5]',
                         'fallback_cb' => false,
@@ -75,9 +75,9 @@
         </div>
 
         <p class="text-[#FFE4D5] font-jost text-sm md:text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
-            &copy; <?php echo esc_html__('Copyright', 'smokeWings'); ?>
+            &copy; <?php echo esc_html__('Copyright', 'smokewings'); ?>
             <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
-            <?php echo esc_html__('All rights reserved', 'smokeWings'); ?>
+            <?php echo esc_html__('All rights reserved', 'smokewings'); ?>
         </p>
 
 

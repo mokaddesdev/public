@@ -1,13 +1,16 @@
 <?php
 /**
  * Contestant Responsibility Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_contestant_responsibility_customizer($wp_customize) {
+function smokewings_contestant_responsibility_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('contestant_responsibility_section', array(
-        'title'    => __('Contestant Responsibility Settings', 'smokeWings'),
+        'title'    => __('Contestant Responsibility Settings', 'smokewings'),
         'priority' => 136,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -17,7 +20,7 @@ function smokeWings_contestant_responsibility_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('contestant_responsibility_title', array(
-        'label'   => __('Contestant Responsibility Title', 'smokeWings'),
+        'label'   => __('Contestant Responsibility Title', 'smokewings'),
         'section' => 'contestant_responsibility_section',
         'type'    => 'textarea',
     ));
@@ -29,14 +32,14 @@ function smokeWings_contestant_responsibility_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('contestant_responsibility_description', array(
-        'label'   => __('Contestant Responsibility Description', 'smokeWings'),
+        'label'   => __('Contestant Responsibility Description', 'smokewings'),
         'section' => 'contestant_responsibility_section',
         'type'    => 'textarea',
     ));
 
     // Image
     $wp_customize->add_setting('contestant_responsibility_image', array(
-        'default'           => get_template_directory_uri() . '/assets/images/rule4.png',
+        'default'           => THEME_DIR_URI . '/assets/images/rule4.png',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
@@ -44,10 +47,10 @@ function smokeWings_contestant_responsibility_customizer($wp_customize) {
         $wp_customize,
         'contestant_responsibility_image_control',
         array(
-            'label'    => __('Contestant Responsibility Image', 'smokeWings'),
+            'label'    => __('Contestant Responsibility Image', 'smokewings'),
             'section'  => 'contestant_responsibility_section',
             'settings' => 'contestant_responsibility_image',
         )
     ));
 }
-add_action('customize_register', 'smokeWings_contestant_responsibility_customizer');
+add_action('customize_register', 'smokewings_contestant_responsibility_customizer');

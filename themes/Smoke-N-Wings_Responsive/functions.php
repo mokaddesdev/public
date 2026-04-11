@@ -1,95 +1,101 @@
 <?php
-
 /**
  * Theme Functions
+ *
+ * @package smokewings
  */
 
+defined( 'ABSPATH' ) || exit;
 
-// Include Default Theme Support
-include_once get_template_directory() . '/inc/default.php';
-
-// Include Enqueue Scripts
-include_once get_template_directory() . '/inc/enqueue.php';
-
-// include  home customizer
-include_once get_template_directory() . '/inc/customizer/home/home.php';
-include_once get_template_directory() . '/inc/customizer/home/header.php';
-include_once get_template_directory() . '/inc/customizer/home/about.php';
-include_once get_template_directory() . '/inc/customizer/home/company_info.php';
-include_once get_template_directory() . '/inc/customizer/home/competition_time_location.php';
-include_once get_template_directory() . '/inc/customizer/home/hero.php';
-include_once get_template_directory() . '/inc/customizer/home/faqs_heading.php';
-include_once get_template_directory() . '/inc/customizer/home/competion_date_banner.php';
-
-include_once get_template_directory() . '/inc/customizer/home/best_bbq_gallery_heading.php';
-include_once get_template_directory() . '/inc/customizer/home/footer.php';
-
-
-// gaming_rules_customizer
-include_once get_template_directory() . '/inc/customizer/rules/gaming_rules_customizer.php';
-include_once get_template_directory() . '/inc/customizer/rules/competition_rules.php';
-include_once get_template_directory() . '/inc/customizer/rules/competition_awareness.php';
-include_once get_template_directory() . '/inc/customizer/rules/competition_held_on.php';
-include_once get_template_directory() . '/inc/customizer/rules/competition_item.php';
-include_once get_template_directory() . '/inc/customizer/rules/contestant_responsibility.php';
-
-
-//  kids customizer
-include_once get_template_directory() . '/inc/customizer/kids/kids.php';
-include_once get_template_directory() . '/inc/customizer/kids/kids_younger_division.php';
-include_once get_template_directory() . '/inc/customizer/kids/kids_older_division.php';
-include_once get_template_directory() . '/inc/customizer/kids/kids_older_competition_monitoring.php';
-include_once get_template_directory() . '/inc/customizer/kids/kids_type.php';
-include_once get_template_directory() . '/inc/customizer/kids/child_entry_form.php';
-
-// sponsor customizer
-include_once get_template_directory() . '/inc/customizer/sponsor/sponsor_page_customizer.php';
-include_once get_template_directory() . '/inc/customizer/sponsor/sponsor_page_heading.php';
-
-// scholarship customizer
-include_once get_template_directory() . '/inc/customizer/scholarship/scholarship.php';
-include_once get_template_directory() . '/inc/customizer/scholarship/featured_sponsor_scholarship.php';
-
-
-// contact-us customizer
-include_once get_template_directory() . '/inc/customizer/contact-us/contact_form.php';
-include_once get_template_directory() . '/inc/customizer/contact-us/contact_us.php';
-
-// enter_competition customizer
-include_once get_template_directory() . '/inc/customizer/enter_competition/enter_competition_page.php';
-include_once get_template_directory() . '/inc/customizer/enter_competition/enter_competition.php';
-
-
-
-
-// Include CPT
-include_once get_template_directory() . '/inc/CPT/faqs.php';
-include_once get_template_directory() . '/inc/CPT/bestbbq.php';
-include_once get_template_directory() . '/inc/CPT/kids_cooksite.php';
-include_once get_template_directory() . '/inc/CPT/sponsors.php';
-include_once get_template_directory() . '/inc/CPT/competition_rule.php';
-
-require get_template_directory() . '/inc/cookie.php';
-
-get_template_part('inc/preloader');
-
-
-
-function allow_svg_uploads($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+/**
+ * Theme Constants
+ */
+if ( ! defined( 'THEME_TEMPLATE' ) ) {
+    define( 'THEME_TEMPLATE', get_template_directory() );
 }
-add_filter('upload_mimes', 'allow_svg_uploads');
 
+if ( ! defined( 'THEME_DIR_URI' ) ) {
+    define( 'THEME_DIR_URI', get_template_directory_uri() );
+}
 
+if ( ! defined( 'THEME_DIR' ) ) {
+    define( 'THEME_DIR', get_template_directory() );
+}
 
+/**
+ * Core Theme Files
+ */
+require_once THEME_TEMPLATE . '/inc/default.php';
+require_once THEME_TEMPLATE . '/inc/enqueue.php';
 
+/**
+ * Home Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/home/home.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/header.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/about.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/company_info.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/competition_time_location.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/hero.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/faqs_heading.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/competion_date_banner.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/best_bbq_gallery_heading.php';
+require_once THEME_TEMPLATE . '/inc/customizer/home/footer.php';
 
+/**
+ * Rules Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/rules/gaming_rules_customizer.php';
+require_once THEME_TEMPLATE . '/inc/customizer/rules/competition_rules.php';
+require_once THEME_TEMPLATE . '/inc/customizer/rules/competition_awareness.php';
+require_once THEME_TEMPLATE . '/inc/customizer/rules/competition_held_on.php';
+require_once THEME_TEMPLATE . '/inc/customizer/rules/competition_item.php';
+require_once THEME_TEMPLATE . '/inc/customizer/rules/contestant_responsibility.php';
 
+/**
+ * Kids Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/kids/kids.php';
+require_once THEME_TEMPLATE . '/inc/customizer/kids/kids_younger_division.php';
+require_once THEME_TEMPLATE . '/inc/customizer/kids/kids_older_division.php';
+require_once THEME_TEMPLATE . '/inc/customizer/kids/kids_older_competition_monitoring.php';
+require_once THEME_TEMPLATE . '/inc/customizer/kids/kids_type.php';
+require_once THEME_TEMPLATE . '/inc/customizer/kids/child_entry_form.php';
 
+/**
+ * Sponsor Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/sponsor/sponsor_page_customizer.php';
+require_once THEME_TEMPLATE . '/inc/customizer/sponsor/sponsor_page_heading.php';
 
+/**
+ * Scholarship Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/scholarship/scholarship.php';
+require_once THEME_TEMPLATE . '/inc/customizer/scholarship/featured_sponsor_scholarship.php';
 
+/**
+ * Contact Us Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/contact-us/contact_form.php';
+require_once THEME_TEMPLATE . '/inc/customizer/contact-us/contact_us.php';
 
+/**
+ * Enter Competition Customizer
+ */
+require_once THEME_TEMPLATE . '/inc/customizer/enter_competition/enter_competition_page.php';
+require_once THEME_TEMPLATE . '/inc/customizer/enter_competition/enter_competition.php';
 
+/**
+ * Custom Post Types
+ */
+require_once THEME_TEMPLATE . '/inc/cpt/faqs.php';
+require_once THEME_TEMPLATE . '/inc/cpt/bestbbq.php';
+require_once THEME_TEMPLATE . '/inc/cpt/kids_cooksite.php';
+require_once THEME_TEMPLATE . '/inc/cpt/sponsors.php';
+require_once THEME_TEMPLATE . '/inc/cpt/competition_rule.php';
 
-?>
+/**
+ * Utilities
+ */
+require_once THEME_TEMPLATE . '/inc/cookie.php';

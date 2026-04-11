@@ -1,13 +1,16 @@
 <?php
 /**
  * Competition Held On Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_competition_held_on_customizer($wp_customize) {
+function smokewings_competition_held_on_customizer($wp_customize) {
 
     // Section
     $wp_customize->add_section('competition_held_on_section', array(
-        'title'    => __('Competition Held On Settings', 'smokeWings'),
+        'title'    => __('Competition Held On Settings', 'smokewings'),
         'priority' => 133,
+        'capability'  => 'edit_theme_options',
     ));
 
     // Title
@@ -17,7 +20,7 @@ function smokeWings_competition_held_on_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_held_on_title', array(
-        'label'   => __('Competition Held On Title', 'smokeWings'),
+        'label'   => __('Competition Held On Title', 'smokewings'),
         'section' => 'competition_held_on_section',
         'type'    => 'textarea',
     ));
@@ -29,7 +32,7 @@ function smokeWings_competition_held_on_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_held_on_first_description', array(
-        'label'   => __('Competition Held On First Description', 'smokeWings'),
+        'label'   => __('Competition Held On First Description', 'smokewings'),
         'section' => 'competition_held_on_section',
         'type'    => 'textarea',
     ));
@@ -41,14 +44,14 @@ function smokeWings_competition_held_on_customizer($wp_customize) {
     ));
 
     $wp_customize->add_control('competition_held_on_second_description', array(
-        'label'   => __('Competition Held On Second Description', 'smokeWings'),
+        'label'   => __('Competition Held On Second Description', 'smokewings'),
         'section' => 'competition_held_on_section',
         'type'    => 'textarea',
     ));
 
     // Image
     $wp_customize->add_setting('competition_held_on_image', array(
-        'default'           => get_template_directory_uri() . '/assets/images/rule1.png',
+        'default'           => THEME_DIR_URI . '/assets/images/rule1.png',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
@@ -56,10 +59,10 @@ function smokeWings_competition_held_on_customizer($wp_customize) {
         $wp_customize,
         'competition_held_on_image_control',
         array(
-            'label'    => __('Competition Held On Image', 'smokeWings'),
+            'label'    => __('Competition Held On Image', 'smokewings'),
             'section'  => 'competition_held_on_section',
             'settings' => 'competition_held_on_image',
         )
     ));
 }
-add_action('customize_register', 'smokeWings_competition_held_on_customizer');
+add_action('customize_register', 'smokewings_competition_held_on_customizer');

@@ -1,13 +1,16 @@
 <?php
 /**
  * Scholarship Page Heading Customizer
+ * 
+ * @package smokewings
  */
-function smokeWings_scholarship_page_heading($wp_customize) {
+function smokewings_scholarship_page_heading($wp_customize) {
 
  
     $wp_customize->add_section('scholarship_page_customizer', array(
-        'title'    => __('🎓 Scholarship Page Settings', 'smokeWings'),
+        'title'    => __('🎓 Scholarship Page Settings', 'smokewings'),
         'priority' => 145, 
+        'capability'  => 'edit_theme_options',
     ));
 
   
@@ -20,11 +23,11 @@ function smokeWings_scholarship_page_heading($wp_customize) {
         $wp_customize,
         'scholarship_page_heading',
         array(
-            'label'       => __('⭐ Scholarship Page Heading ⭐', 'smokeWings'),
+            'label'       => __('⭐ Scholarship Page Heading ⭐', 'smokewings'),
             'section'     => 'scholarship_page_customizer',
             'type'        => 'hidden',
         )
     ));
 
 }
-add_action('customize_register', 'smokeWings_scholarship_page_heading');
+add_action('customize_register', 'smokewings_scholarship_page_heading');
