@@ -1,9 +1,8 @@
 <section class="relative w-full pt-18 px-[2.5%] md:px-[3.5%] lg:px-[7.5%] xl:px-[8.68%] xl:pt-[108px] xl:pb-[35px] mx-auto py-5">
 
-
   <!-- Foreground content layer -->
   <div class="relative z-20 w-full max-w-[1300px] mx-auto">
-
+    
       <!-- Background huge text layer -->
    <div class="absolute -top-14 lg:-top-16 2xl:-top-20 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 transition z-10 opacity-100">
     <?php get_template_part("svg/berbecue_svg"); ?>
@@ -33,7 +32,7 @@
         </p>
 
         <!-- contact info boxes -->
-        <?php get_template_part("sections/contact_information"); ?>
+        <?php get_template_part("template-parts/contact_information"); ?>
       </div>
 
       <!-- Right side form -->

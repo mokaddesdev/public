@@ -57,7 +57,7 @@ function smokewings_hero_customizer( $customizer ) {
     $customizer->add_setting(
         'hero_image',
         array(
-            'default'           => THEME_DIR_URI . '/assets/images/hero.png',
+            'default'           => THEME_DIR_URI . '/assets/images/meat.png',
             'sanitize_callback' => 'esc_url_raw',
         )
     );

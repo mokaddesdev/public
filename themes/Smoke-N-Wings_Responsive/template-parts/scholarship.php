@@ -9,7 +9,7 @@ $banner  = get_theme_mod('featured_sponsor_banner_text', 'In 2023, 46 scholarshi
 
 $image   = get_theme_mod('featured_sponsor_image');
 
-$enter_page = get_page_by_path('enter');
+$enter_page = get_page_by_path('enter-competition');
 if ($enter_page) {
     $enter_link = get_permalink($enter_page);
 } else {

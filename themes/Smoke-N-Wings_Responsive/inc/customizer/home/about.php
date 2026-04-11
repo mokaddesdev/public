@@ -73,7 +73,10 @@ function smokewings_about_customizer( $customizer ) {
     // Image
     $customizer->add_setting(
         'about_left_image',
-        array()
+        array(
+            'default'           => THEME_DIR_URI . '/assets/images/aboutimg.png',
+            'sanitize_callback' => 'esc_url_raw',
+        )
     );
 
     $customizer->add_control( new WP_Customize_Image_Control(
